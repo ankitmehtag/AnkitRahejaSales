@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRootFooterFilers"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:padding="8dp" >
+
+    <LinearLayout
+        android:id="@+id/llInfra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvInfra"
+            style="@style/BHMTextVIewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:singleLine="true"  
+            android:text="Infra"
+            android:textColor="@color/selected_underline"
+            android:textSize="15sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/llUnderlineInfra"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/selected_underline"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llNeeds"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvNeeds"
+            style="@style/BHMTextVIewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Needs"
+            android:textColor="@color/unselected_tv"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/llUnderlineNeeds"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/unselected_underline"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvPrice"
+            style="@style/BHMTextVIewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Price"
+            android:textColor="@color/unselected_tv"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/llUnderlinePrice"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/unselected_underline"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLifestyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvLife"
+            style="@style/BHMTextVIewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Lifestyle"
+            android:textColor="@color/unselected_tv"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/llUnderlineLifestyle"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/unselected_underline"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llReturns"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvReturns"
+            style="@style/BHMTextVIewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Returns"
+            android:textColor="@color/unselected_tv"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/llUnderlineReturns"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/unselected_underline"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

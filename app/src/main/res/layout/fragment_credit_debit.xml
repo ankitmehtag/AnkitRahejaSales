@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btn_pressed_white">
+
+    <Button
+        android:id="@+id/btn_make_payment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/blue_color"
+        android:gravity="center"
+        android:text="@string/make_payment"
+        android:textColor="@color/text_state_white_grey"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_card_number_edit_text"
+                android:layout_marginBottom="0.25dp"
+                android:layout_weight="1">
+                <EditText
+                    android:id="@+id/cardNumberEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:inputType="phone"
+                    android:padding="16dp"
+                    android:background="@null"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/colorGray"
+                    android:textSize="14sp"
+                    tools:ignore="LabelFor,NegativeMargin"
+                    android:layout_weight="5"
+                    android:hint="Card number">
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/ivCard"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_card_number"/>
+               </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableRight="@drawable/ic_card_number"
+                android:layout_marginBottom="0.25dp"
+                android:background="@drawable/bg_card_number_edit_text"
+                android:hint="Card number"
+                android:inputType="phone"
+                android:padding="16dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/colorGray"
+                android:textSize="14sp"
+                tools:ignore="LabelFor,NegativeMargin"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/cardNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="0.25dp"
+                android:background="@drawable/bg_card_number_edit_text"
+                android:hint="Name On Card"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="16dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/colorGray"
+                android:textSize="14sp"
+                tools:ignore="LabelFor,NegativeMargin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.25dp"
+                android:orientation="horizontal"
+                tools:ignore="NegativeMargin">
+
+                <EditText
+                    android:id="@+id/cardDateEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="0.25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_card_date_edit_text"
+                    android:drawableRight="@drawable/ic_card_date"
+                    android:hint="MM/YYYY"
+                    android:inputType="date"
+                    android:padding="16dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/colorGray"
+                    android:textSize="14sp"
+                    tools:ignore="LabelFor,RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/cardCVCEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="0.25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_card_cvc_edit_text"
+                    android:drawableRight="@drawable/ic_card_cvc"
+                    android:hint="CVV"
+                    android:inputType="numberPassword"
+                    android:padding="16dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/colorGray"
+                    android:textSize="14sp"
+                    tools:ignore="LabelFor,RtlHardcoded" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+Applications Memory Usage (kB):
+Uptime: 23318301 Realtime: 25381302
+
+** MEMINFO in pid 5422 [com.queppelin.bookmyhouse] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap    32791    32772        0      820    34520    32959     1560
+  Dalvik Heap    87595    87056        0     1716    92960    78629    14331
+ Dalvik Other     5150     5012        0      844                           
+        Stack      372      372        0        0                           
+       Ashmem      128      128        0        0                           
+    Other dev        5        0        4        0                           
+     .so mmap     3144      416     1732     2816                           
+    .jar mmap        4        0        0        0                           
+    .apk mmap     1278        0      332        0                           
+    .ttf mmap      457        0      444        0                           
+    .dex mmap     8775      352     6868      228                           
+   Other mmap       37        4       12        0                           
+      Unknown      252      252        0        8                           
+        TOTAL   139988   126364     9392     6432   127480   111588    15891
+ 
+ Objects
+               Views:     1201         ViewRootImpl:        3
+         AppContexts:       10           Activities:        4
+              Assets:       23        AssetManagers:       23
+       Local Binders:       23        Proxy Binders:       32
+    Death Recipients:        1
+     OpenSSL Sockets:        3
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:        0
+ 
+ 
+ Asset Allocations
+    zip:/localityData/app/com.queppelin.bookmyhouse-10.apk:/assets/fonts/regular.ttf: 433K
+    zip:/localityData/app/com.queppelin.bookmyhouse-10.apk:/assets/fonts/regular.ttf: 433K
+    zip:/localityData/app/com.queppelin.bookmyhouse-10.apk:/assets/fonts/regular.ttf: 433K
+    zip:/localityData/app/com.queppelin.bookmyhouse-10.apk:/assets/fonts/regular.ttf: 433K
+    zip:/localityData/app/com.queppelin.bookmyhouse-10.apk:/assets/fonts/regular.ttf: 433K
+    zip:/localityData/app/com.queppelin.bookmyhouse-10.apk:/assets/fonts/regular.ttf: 433K
+    zip:/localityData/app/com.queppelin.bookmyhouse-10.apk:/assets/fonts/regular.ttf: 433K
+    zip:/localityData/app/com.queppelin.bookmyhouse-10.apk:/assets/fonts/regular.ttf: 433K
+    zip:/localityData/app/com.queppelin.bookmyhouse-10.apk:/assets/fonts/regular.ttf: 433K
+    zip:/localityData/app/com.queppelin.bookmyhouse-10.apk:/assets/fonts/regular.ttf: 433K
+    zip:/localityData/app/com.queppelin.bookmyhouse-10.apk:/assets/fonts/regular.ttf: 433K
+    zip:/localityData/app/com.queppelin.bookmyhouse-10.apk:/assets/fonts/regular.ttf: 433K
+    zip:/localityData/app/com.queppelin.bookmyhouse-10.apk:/assets/fonts/regular.ttf: 433K
+    zip:/localityData/app/com.queppelin.bookmyhouse-10.apk:/assets/fonts/regular.ttf: 433K
+    zip:/localityData/app/com.queppelin.bookmyhouse-10.apk:/assets/fonts/regular.ttf: 433K
+    zip:/localityData/app/com.queppelin.bookmyhouse-10.apk:/assets/fonts/regular.ttf: 433K
+    zip:/localityData/app/com.queppelin.bookmyhouse-10.apk:/assets/fonts/regular.ttf: 433K

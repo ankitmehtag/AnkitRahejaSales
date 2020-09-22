@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="#fff"
+    android:paddingLeft="10dp" >
+
+    <TextView
+        android:id="@+id/header_suggestion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/img_suggestion"
+        android:alpha=".7"
+        android:singleLine="true"
+        android:text="sadfsadfsfsadfdasfsadfsadfs"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/header_suggestion"
+        android:alpha=".8"
+        android:background="@color/bg_grey" />
+
+    <RelativeLayout
+        android:id="@+id/suggestion_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_suggestion" >
+
+        <TextView
+            android:id="@+id/text_suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="12dp"
+            android:singleLine="true"
+            android:text="sdfsadf"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/project_builder_suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="12dp"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:text="XYZ"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_suggestion"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:padding="16dp" />
+
+</RelativeLayout>

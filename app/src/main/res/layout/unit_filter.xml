@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Header aligned to top -->
+
+   <!-- <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#714617" >
+
+        <TextView
+            android:id="@+id/tv_reset_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="@string/header_reset"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textunit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/back_unit"
+            android:text="@string/header_cancel"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/back_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/arrow_left"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/back_unit"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@+id/back_unit"
+            android:gravity="center"
+            android:text="@string/header_filter"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+-->
+    <!-- Footer aligned to bottom -->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar_brown" />
+
+    <ScrollView
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/toolbar" >
+
+        <RelativeLayout
+            android:id="@+id/scroll_below_list"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/sort_by"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true" >
+
+                <TextView
+                    android:id="@+id/sort_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/unit_sort"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/unit_linear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sort_by"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_unit_price"
+                    android:layout_width="0.0dip"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1.0"
+                    android:background="@color/white"
+                    android:text="@string/unit_price"
+                    android:textColor="@drawable/filter_tv_text_selector"
+                    android:textSize="14dp" />
+
+                <View style="@style/DividerVertical"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btn_unit_floor"
+                    android:layout_width="0.0dip"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1.0"
+                    android:background="#ffffff"
+                    android:text="@string/unit_floor"
+                    android:textColor="@drawable/filter_tv_text_selector"
+                    android:textSize="14dp"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/unit_floor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/floor_layout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" />
+
+            <RelativeLayout
+                android:id="@+id/floor_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/unit_linear"
+                android:layout_alignStart="@+id/unit_linear">
+
+                <TextView
+                    android:id="@+id/tv_showing_floors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_filter_by_text"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/tv_filter_by_text"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/unit_filter_floor_d"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_filter_by_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/unit_filter_fllor"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#009746"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/apply_unit_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gold_needs_selector"
+            android:text="@string/unit_apply"
+            android:textColor="@color/text_state_white_grey"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

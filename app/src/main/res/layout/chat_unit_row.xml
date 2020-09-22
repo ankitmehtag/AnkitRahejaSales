@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:id="@+id/layout_chat_row"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_unit_img"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:background="@color/grey"
+        android:padding="1dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_img_loder" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        style="@style/tv_chat_unit_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv_unit_img"
+        android:text="ABC" />
+
+    <TextView
+        android:id="@+id/tv_chat_id"
+        style="@style/tv_chat_unit_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_user_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv_unit_img"
+        android:text="Chat Id: 201" />
+
+    <TextView
+        android:id="@+id/tv_unit_no"
+        style="@style/tv_chat_unit_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_chat_id"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv_unit_img"
+        android:text="Unit No: 106F" />
+
+    <TextView
+        android:id="@+id/tv_unit_name"
+        style="@style/tv_chat_unit_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_unit_no"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv_unit_img"
+        android:text="Raheja" />
+
+    <TextView
+        android:id="@+id/tv_unit_type"
+        style="@style/tv_chat_unit_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_unit_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv_unit_img"
+        android:text="4 BHK Flats" />
+
+    <TextView
+        android:id="@+id/tv_reserved"
+        style="@style/tv_chat_unit_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_unit_type"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv_unit_img"
+        android:text="Reserved"
+        android:textColor="@color/red" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/chat_count"
+            style="@style/tv_chat_unit_sub_title"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/notification_dot"
+            android:gravity="center"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+</RelativeLayout>

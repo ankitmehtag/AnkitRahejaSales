@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_hot_proj"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/layout_linear"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_image" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/black_alpha_40"
+            android:layout_height="150dp"/>
+        <Button
+            android:id="@+id/btn_hot_proj_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/commercial"
+            android:textColor="@color/text_state_yellow_white"
+            android:text="@string/hot_projects"
+            android:layout_centerInParent="true"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

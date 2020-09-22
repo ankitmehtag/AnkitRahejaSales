@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btn_pressed_white">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar_brown" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <TextView android:layout_height="40dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/blue_color"
+                android:gravity="center_vertical"
+                android:textStyle="normal"
+                android:layout_marginBottom="2dp"
+                android:textSize="16dp"
+                android:text="@string/user_profile"/>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/blue_color"
+                android:layout_marginBottom="10dp"/>
+            <RelativeLayout
+                android:id="@+id/rl_profile"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <!--<com.views.RoundedImageView
+                               android:id="@+id/iv_profile"
+                               android:layout_width="100dp"
+                               android:layout_height="100dp"
+                               android:layout_gravity="center"
+                               android:src="@drawable/com_facebook_profile_picture_blank_portrait"
+                               android:visibility="visible" />-->
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/ic_profile_circle"
+                    app:civ_border_color="@color/blue_color"
+                    app:civ_border_width="0dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_radius="0"
+                    app:civ_shadow_color="@color/grey_boarder"
+                    android:layout_gravity="center" />
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="50dp"
+                    android:tint="@color/blue_color"
+                    android:src="@drawable/ic_camera_enhance_black_48dp"/>
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/Username"
+                android:background="#FFFFFF"
+                android:paddingLeft="5dp"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textColorHint="@color/grey_boarder"
+                android:textColor="@color/black"
+                android:layout_marginBottom="1dp"
+                android:textSize="16sp"
+                android:enabled="false"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/Email"
+                android:background="#FFFFFF"
+                android:paddingLeft="5dp"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/text_color_grey"
+                android:singleLine="true"
+                android:textColorHint="@color/grey_boarder"
+                android:layout_marginBottom="1dp"
+                android:editable="false"
+                android:focusable="false"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/MobileNo"
+                android:background="#FFFFFF"
+                android:inputType="number"
+                android:textColor="@color/text_color_grey"
+                android:maxLength="10"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColorHint="@color/grey_boarder"
+                android:layout_marginBottom="1dp"
+                android:editable="false"
+                android:focusable="false"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_update_profile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:padding="2dp"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/blue_color"
+                android:gravity="center"
+                android:text="@string/update_profile"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textAllCaps="false" />
+            <LinearLayout
+                android:id="@+id/ll_change_pwd_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+                <TextView android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/blue_color"
+                    android:gravity="center_vertical"
+                    android:textStyle="normal"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="16dp"
+                    android:text="@string/change_password"/>
+                <View android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/blue_color"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:id="@+id/et_old_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/old_pwd"
+                    android:background="#FFFFFF"
+                    android:textColor="@color/black"
+                    android:paddingLeft="5dp"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColorHint="@color/grey_boarder"
+                    android:layout_marginBottom="1dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"/>
+                <EditText
+                    android:id="@+id/et_new_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/new_pwd"
+                    android:background="#FFFFFF"
+                    android:textColor="@color/black"
+                    android:paddingLeft="5dp"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColorHint="@color/grey_boarder"
+                    android:layout_marginBottom="1dp"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_confirm_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/confirm_pwd"
+                    android:background="#FFFFFF"
+                    android:textColor="@color/black"
+                    android:inputType="textPassword"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/grey_boarder"
+                    android:layout_marginBottom="1dp"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btn_change_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:padding="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/blue_color"
+                    android:gravity="center"
+                    android:text="@string/change_password"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

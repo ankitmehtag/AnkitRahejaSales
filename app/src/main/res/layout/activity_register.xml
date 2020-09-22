@@ -1,0 +1,458 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar_brown" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin" >
+
+            <EditText
+                android:id="@+id/editTextName"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxLines="1"
+                android:hint="@string/Name_mandatory"
+                android:padding="10dp"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:textCursorDrawable="@null" >
+            </EditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D4D8D8" >
+            </View>
+            <EditText
+                android:id="@+id/editTextBusiness"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxLines="1"
+                android:hint="@string/business_name_mandatory"
+                android:padding="10dp"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:textCursorDrawable="@null" >
+            </EditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D4D8D8" >
+            </View>
+            <EditText
+                android:id="@+id/editTextState"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxLines="1"
+                android:hint="@string/state_mandatory"
+                android:padding="10dp"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:textCursorDrawable="@null" >
+            </EditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D4D8D8" >
+            </View>
+            <EditText
+                android:id="@+id/editTextCity"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxLines="1"
+                android:hint="@string/city_mandatory"
+                android:maxLength="50"
+                android:padding="10dp"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:textCursorDrawable="@null" >
+            </EditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D4D8D8" >
+            </View>
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/Email_mandatory"
+                android:maxLines="1"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:padding="10dp"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:textCursorDrawable="@null" >
+            </EditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D4D8D8" >
+            </View>
+
+            <EditText
+                android:id="@+id/editTextMobileno"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/MobileNo_mandatory"
+                android:maxLines="1"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:textCursorDrawable="@null" >
+            </EditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D4D8D8" >
+            </View>
+            <RelativeLayout
+                android:id="@+id/rl_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    style="@style/BMHEditTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="@string/Password"
+                    android:maxLines="1"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:padding="10dp"
+                    android:textColor="#666666"
+                    android:textColorHint="#AAADAD"
+                    android:textCursorDrawable="@null" >
+                </EditText>
+
+                <CheckBox
+                    android:id="@+id/textWhach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/editTextPassword"
+                    android:layout_alignBottom="@+id/editTextPassword"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:textColor="#db9d29"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D4D8D8"
+                android:visibility="gone">
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/rl_user_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Spinner
+                    android:id="@+id/sp_user_type"
+                    style="@style/BMHEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/user_type"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="60dp"
+                    android:gravity="center"
+                    android:entries="@array/user_type">
+                </Spinner>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow_down" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D4D8D8" >
+            </View>
+            <EditText
+                android:id="@+id/editTextAadhar"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/aadhar_mandatory"
+                android:maxLines="1"
+                android:inputType="number"
+                android:maxLength="12"
+                android:padding="10dp"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:textCursorDrawable="@null" >
+            </EditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D4D8D8" >
+            </View>
+
+            <EditText
+                android:id="@+id/editTextReraRegistration"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/rera_registration_mandatory"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:digits="@string/alphaNumeric"
+                android:textCursorDrawable="@null" >
+            </EditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D4D8D8" >
+            </View>
+            <EditText
+                android:id="@+id/editTextGSTRegistration"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/gst_registration_mandatory"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:digits="@string/alphaNumeric"
+                android:textCursorDrawable="@null" >
+            </EditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D4D8D8" >
+            </View>
+            <EditText
+                android:id="@+id/editTextPan"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/pan_mandatory"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:digits="@string/alphaNumeric"
+                android:textAllCaps="false"
+                android:textCursorDrawable="@null" >
+            </EditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D4D8D8" >
+            </View>
+
+            <EditText
+                android:id="@+id/editTextRMCode"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/rm_code"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:digits="@string/alphaNumeric"
+                android:textCursorDrawable="@null" >
+            </EditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D4D8D8" >
+            </View>
+            <EditText
+                android:id="@+id/editTextBrokerFirmCode"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/broker_firm_code_mandatory"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:digits="@string/alphaNumeric"
+                android:textCursorDrawable="@null" >
+            </EditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D4D8D8" >
+            </View>
+
+            <TextView
+                android:id="@+id/Text_click1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="By clicking Sign up, you agree to BMH user agreement, Privacy Policy, Cookie Policy."
+                android:textColor="#979797"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <!-- <View -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="1dp" -->
+            <!-- android:layout_marginTop="20dp" -->
+            <!-- android:background="#AEB0AF" /> -->
+
+            <Button
+                android:id="@+id/buttonRegister"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="Sign up"
+                android:textAllCaps="true"
+                android:background="@color/blue_color"
+                android:textColor="@color/text_state_white_grey"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="bottom" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/by_cre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:lines="2"
+                        android:text="By creating an account, you agree to our Terms &amp; Conditions"
+                        android:textColor="#A1A1A5"
+                        android:textSize="16sp" />
+
+                    <!-- <TextView -->
+                    <!-- android:id="@+id/Term" -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_marginTop="10dp" -->
+                    <!-- android:layout_toRightOf="@+id/by_cre" -->
+                    <!-- android:text="@string/set_term_cond" -->
+                    <!-- android:textColor="#0d937c" -->
+                    <!-- android:textSize="18sp" /> -->
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEDF1"
+        android:gravity="bottom" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/not"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Already a member?"
+                android:textColor="#A1A1A5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_login_here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/not"
+                android:text=" Login Here"
+                android:textColor="@color/blue_color"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

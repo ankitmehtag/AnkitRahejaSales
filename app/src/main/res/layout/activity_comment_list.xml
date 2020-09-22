@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/proj_detail_bg"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.queppelin.bookmyhouse.com.bookmyhouse.CommentListActivity" >
+    
+    <include layout="@layout/app_bar_brown"/>
+
+    <ListView
+        android:id="@+id/listViewComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#666666"
+        android:dividerHeight="1dp" >
+    </ListView>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#666666"/>
+
+</LinearLayout>

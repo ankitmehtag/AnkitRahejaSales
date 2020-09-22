@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/tvGallery"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:background="@drawable/app_icon_img"
+        android:scaleType="fitXY" />
+
+    <!-- <Gallery /> -->
+
+
+    <!-- <VideoView -->
+    <!-- android:id="@+id/videoView" -->
+    <!-- android:layout_width="100dp" -->
+    <!-- android:layout_height="100dp" -->
+    <!-- android:layout_gravity="center" -->
+    <!-- android:background="@drawable/video_door_phone" /> -->
+
+</LinearLayout>

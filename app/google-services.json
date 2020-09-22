@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "508597652295",
+    "firebase_url": "https://raheja-apps.firebaseio.com",
+    "project_id": "raheja-apps",
+    "storage_bucket": "raheja-apps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508597652295:android:e2eb9a10dae11493",
+        "android_client_info": {
+          "package_name": "com.sp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508597652295-829ktqabhberrga7k5gu8c0k0f5mdrag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMq9ceE3tAio_xXibfqoEjq4g6LkfvloA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

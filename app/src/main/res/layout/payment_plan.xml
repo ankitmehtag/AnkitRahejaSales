@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F4"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/tv_project_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="18dp"
+                        android:text="-"
+                        android:textAllCaps="true"
+                        android:textColor="#000000"
+                        android:textSize="18sp" >
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/pagerDeveloper"
+                        android:layout_width="125dp"
+                        android:layout_height="120dp"
+                        android:layout_below="@+id/tv_project_name"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="2dp" />
+
+                    <TextView
+                        android:id="@+id/tvPricePsf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/bhk"
+                        android:layout_below="@+id/bhk"
+                        android:text="0000 Sq ft."
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:id="@+id/image_line"
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        android:layout_alignLeft="@+id/Possession"
+                        android:layout_centerVertical="true"
+                        android:background="#969696"
+                        android:visibility="gone" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/total_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tvPricePsf"
+                        android:layout_below="@+id/image_line"
+                        android:layout_marginTop="105dp"
+                        android:text="Total Price"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvFloorNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/tvUnitNo"
+                        android:layout_marginLeft="12dp"
+                        android:text=""
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tvUnitNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/pagerDeveloper"
+                        android:layout_below="@+id/pagerDeveloper"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/apply_charge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/total_price"
+                        android:layout_below="@+id/total_price"
+                        android:text="Other charges may apply"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvBooking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tvUnitNo"
+                        android:layout_alignBottom="@+id/tvUnitNo"
+                        android:layout_alignLeft="@+id/apply_charge"
+                        android:text="Booking Amount"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvReturnPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tvBooking"
+                        android:layout_below="@+id/tvBooking"
+                        android:text="Non-refundable"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/Possession"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:singleLine="true"
+                        android:visibility="invisible"
+                        android:text="Possession by:"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tvBuilderName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tvUnitNo"
+                        android:layout_alignParentTop="true"
+                        android:text=""
+                        android:textColor="#969696" />
+
+                    <TextView
+                        android:id="@+id/bhk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/pagerDeveloper"
+                        android:layout_toRightOf="@+id/pagerDeveloper"
+                        android:text="BHK"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/tvPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/total_price"
+                        android:layout_alignBottom="@+id/total_price"
+                        android:layout_toRightOf="@+id/apply_charge"
+                        android:fontFamily="Arial"
+                        android:text="000"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tvBookingF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tvBooking"
+                        android:layout_marginLeft="30dp"
+                        android:layout_toRightOf="@+id/tvBooking"
+                        android:fontFamily="Arial"
+                        android:text=""
+                        android:textColor="#000000" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llselectpaymentPlan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:padding="2dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Select Payment Plan"
+                    android:layout_weight="1"
+                    android:textColor="#999B9B"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff">
+
+                    <Spinner
+                        android:id="@+id/paymentOptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                         />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:src="@drawable/arrow_down" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llNoOfParkings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:text="Select Number of parkings"
+                    android:gravity="center_vertical"
+                    android:textColor="#999B9B"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp">
+
+                    <Spinner
+                        android:id="@+id/no_of_parkings"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="#ffffff" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:src="@drawable/arrow_down" />
+                </RelativeLayout>
+            </LinearLayout>
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                 android:background="#C5C6D0"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_marginBottom="1dp">
+                    <TextView
+                        style="@style/briceBreakTvStyle"
+                        android:text="Apartment Type"
+                        android:fontFamily="Arial"/>
+
+                    <TextView
+                        android:id="@+id/tvAprtmentType"
+                        style="@style/briceBreakTvStyle"
+                        android:gravity="right"
+                        android:fontFamily="Arial"
+                        android:text="-" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        style="@style/briceBreakTvStyle"
+                        android:text="Apartment Size"
+                        android:fontFamily="Arial"/>
+
+                    <TextView
+                        android:id="@+id/tvAprtmentSize"
+                        style="@style/briceBreakTvStyle"
+                        android:gravity="right"
+                        android:fontFamily="Arial"
+                        android:text="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        style="@style/briceBreakTvStyle"
+                        android:text="Price"
+                        android:fontFamily="Arial"/>
+
+                    <TextView
+                        android:id="@+id/tvAprtmentPricePerSqFt"
+                        style="@style/briceBreakTvStyle"
+                        android:fontFamily="Arial"
+                        android:gravity="right"
+                        android:text="0" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        style="@style/briceBreakTvStyle"
+                        android:text="BSP"
+                        android:fontFamily="Arial"/>
+
+                    <TextView
+                        android:id="@+id/tvBSP"
+                        style="@style/briceBreakTvStyle"
+                        android:fontFamily="Arial"
+                        android:gravity="right"
+                        android:text="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llDiscount"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        style="@style/briceBreakTvStyle"
+                        android:text="Discount"
+                        android:fontFamily="Arial"/>
+
+                    <TextView
+                        android:id="@+id/tvDiscount"
+                        style="@style/briceBreakTvStyle"
+                        android:fontFamily="Arial"
+                        android:gravity="right"
+                        android:text="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llDiscountedBSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        style="@style/briceBreakTvStyle"
+                        android:text="BSP After Discount"
+                        android:fontFamily="Arial"/>
+
+                    <TextView
+                        android:id="@+id/tvBSPAfterDiscount"
+                        style="@style/briceBreakTvStyle"
+                        android:fontFamily="Arial"
+                        android:gravity="right"
+                        android:text="0" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        style="@style/briceBreakTvStyle"
+                        android:text="PLC"
+                        android:fontFamily="Arial"/>
+
+                    <TextView
+                        android:id="@+id/tvPLC"
+                        style="@style/briceBreakTvStyle"
+                        android:fontFamily="Arial"
+                        android:gravity="right"
+                        android:text="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        style="@style/briceBreakTvStyle"
+                        android:text="EDC/IDC"
+                        android:fontFamily="Arial"/>
+
+                    <TextView
+                        android:id="@+id/tvEDC"
+                        style="@style/briceBreakTvStyle"
+                        android:fontFamily="Arial"
+                        android:gravity="right"
+                        android:text="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        style="@style/briceBreakTvStyle"
+                        android:text="Club Membership"
+                        android:fontFamily="Arial"/>
+
+                    <TextView
+                        android:id="@+id/tvClub"
+                        style="@style/briceBreakTvStyle"
+                        android:fontFamily="Arial"
+                        android:gravity="right"
+                        android:text="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_parking_charges"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        style="@style/briceBreakTvStyle"
+                        android:text="Parking Charges"
+                        android:fontFamily="Arial"/>
+
+                    <TextView
+                        android:id="@+id/tvPC"
+                        style="@style/briceBreakTvStyle"
+                        android:fontFamily="Arial"
+                        android:gravity="right"
+                        android:text="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_ibms"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        style="@style/briceBreakTvStyle"
+                        android:text="IBMS"
+                        android:fontFamily="Arial"/>
+
+                    <TextView
+                        android:id="@+id/tvIBMS"
+                        style="@style/briceBreakTvStyle"
+                        android:fontFamily="Arial"
+                        android:gravity="right"
+                        android:text="0" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_ifms"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        style="@style/briceBreakTvStyle"
+                        android:text="IFMS"
+                        android:fontFamily="Arial"/>
+
+                    <TextView
+                        android:id="@+id/tvIFMS"
+                        style="@style/briceBreakTvStyle"
+                        android:fontFamily="Arial"
+                        android:gravity="right"
+                        android:text="0" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/tvSerTaxBspLabel"
+                        style="@style/briceBreakTvStyle"
+                        android:text="GST on BSP (12%)"
+                        android:fontFamily="Arial"/>
+
+                    <TextView
+                        android:id="@+id/tvSerTaxBsp"
+                        style="@style/briceBreakTvStyle"
+                        android:fontFamily="Arial"
+                        android:gravity="right"
+                        android:text="0" />
+                </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="40dp"
+                     android:background="#FFFFFF"
+                     android:orientation="horizontal"
+                     android:padding="10dp"
+                     android:layout_marginBottom="1dp">
+
+                     <TextView
+                         android:id="@+id/tvSerTAxPlcLabel"
+                         style="@style/briceBreakTvStyle"
+                         android:text="@string/service_tax_of_plc"
+                         android:fontFamily="Arial"/>
+
+                     <TextView
+                         android:id="@+id/tvSerTAxPlc"
+                         style="@style/briceBreakTvStyle"
+                         android:fontFamily="Arial"
+                         android:gravity="right"
+                         android:text="0" />
+                 </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_parking_tax"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/tvSerTaxCarParkingLabel"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.60"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="GST on Car Parking (12%)"
+                        android:fontFamily="Arial"/>
+
+                    <TextView
+                        android:id="@+id/tvSerTaxCarParking"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.40"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="Arial"
+                        android:gravity="right"
+                        android:text="0" />
+                </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="40dp"
+                     android:background="#FFFFFF"
+                     android:orientation="horizontal"
+                     android:padding="10dp"
+                     android:layout_marginBottom="1dp">
+
+                     <TextView
+                         android:id="@+id/tvSerTAxClubMemLabel"
+                         android:layout_height="match_parent"
+                         android:layout_width="0dp"
+                         android:layout_weight="0.60"
+                         android:textColor="@color/black"
+                         android:textSize="16sp"
+                         android:text="@string/service_tax_of_club_mem"
+                         android:fontFamily="Arial"/>
+
+                     <TextView
+                         android:id="@+id/tvSerTAxClubMem"
+                         android:layout_height="match_parent"
+                         android:layout_width="0dp"
+                         android:layout_weight="0.40"
+                         android:textColor="@color/black"
+                         android:textSize="16sp"
+                         android:fontFamily="Arial"
+                         android:gravity="right"
+                         android:text="0" />
+                 </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/tvGstBspPlcLabel"
+                        style="@style/briceBreakTvStyle"
+                        android:text="GST/VAT on BSP + PLC"
+                        android:fontFamily="Arial"/>
+
+                    <TextView
+                        android:id="@+id/tvGstBspPlc"
+                        style="@style/briceBreakTvStyle"
+                        android:fontFamily="Arial"
+                        android:gravity="right"
+                        android:text="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_otherCharges"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:visibility="visible"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/tvOtherChargesTitle"
+                        style="@style/briceBreakTvStyle"
+                        android:text="Other Charges"
+                        android:fontFamily="Arial"/>
+
+                    <TextView
+                        android:id="@+id/tvOtherCharges"
+                        style="@style/briceBreakTvStyle"
+                        android:fontFamily="Arial"
+                        android:gravity="right"
+                        android:text="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        style="@style/briceBreakTvStyle"
+                        android:text="Booking Fee"
+                        android:fontFamily="Arial"/>
+
+                    <TextView
+                        android:id="@+id/tvBookingFee"
+                        style="@style/briceBreakTvStyle"
+                        android:fontFamily="Arial"
+                        android:gravity="right"
+                        android:text="0" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#f5f4f4"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:paddingLeft="15dp"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Grand Total- "
+                        android:textStyle="normal"
+                        android:fontFamily="Arial"
+                        android:textSize="18dp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tvGrandTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:fontFamily="Arial"
+                        android:textSize="18dp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/ll_accept"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/gold_needs_selector"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:textColor="@color/text_state_white_grey"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

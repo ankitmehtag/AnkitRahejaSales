@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:harsh="http://schemas.android.com/apk/res-auto"
+    tools:context="com.queppelin.bookmyhouse.CityListActivity" >
+
+    <item
+        android:id="@+id/action_mylocation"
+        android:icon="@drawable/pin"
+        android:orderInCategory="100"
+        android:title="Location"
+        harsh:showAsAction="always"/>
+
+</menu>

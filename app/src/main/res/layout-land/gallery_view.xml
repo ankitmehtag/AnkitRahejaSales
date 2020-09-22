@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/sb__snack_bkgnd">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar_brown" />
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="Photos"
+        android:textColor="@color/white"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar"
+    android:orientation="horizontal"
+    android:weightSum="1">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager_full_img"
+        android:layout_width="0dp"
+        android:layout_weight="0.80"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="25dp"
+        android:layout_marginBottom="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/app_icon_img" />
+
+    <ScrollView
+        android:id="@+id/scrv_thumbnail"
+        android:layout_width="0dp"
+        android:layout_weight="0.20"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_marginBottom="50dp">
+        <LinearLayout
+            android:id="@+id/ll_thumbnail_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="#cfcfcf">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            app:tabMode="scrollable"/>
+
+    </LinearLayout>
+</RelativeLayout>

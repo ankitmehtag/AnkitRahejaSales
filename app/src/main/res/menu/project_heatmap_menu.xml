@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.queppelin.bookmyhouse.PropertyListActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+     <item
+         android:id="@+id/action_heatmap"
+         android:title="@string/heat_map"
+         android:icon="@drawable/ic_place_white"
+         app:showAsAction="always"/>
+     <item
+         android:id="@+id/action_filter"
+         app:showAsAction="always"
+         android:icon="@drawable/filter_icon"
+         android:title="@string/action_map"/>
+
+</menu>

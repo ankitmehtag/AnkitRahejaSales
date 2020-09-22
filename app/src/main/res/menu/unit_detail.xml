@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:harsh="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_golden"
+    tools:context="com.queppelin.bookmyhouse.AreaListActivity" >
+
+    <!-- <item -->
+    <!-- android:id="@+id/action_rate" -->
+    <!-- android:orderInCategory="100" -->
+    <!-- harsh:showAsAction="never" -->
+    <!-- android:title="Rate"/> -->
+    <item
+        android:id="@+id/action_comment"
+        android:orderInCategory="101"
+        android:title="Comment"
+        harsh:showAsAction="never"/>
+    <item
+        android:id="@+id/actionFav"
+        android:title="Favorite"
+        harsh:actionLayout="@layout/menu_fav_layout"
+        harsh:showAsAction="always"/>
+    <item
+        android:id="@+id/actionRating"
+        android:title="Rating"
+        harsh:actionLayout="@layout/menu_rating_layout"
+        harsh:showAsAction="always"/>
+
+</menu>

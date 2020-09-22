@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editTextName"
+        style="@style/BMHEditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="#00000000"
+        android:ems="10"
+        android:hint="Name"
+        android:maxLength="30"
+        android:padding="10dp"
+        android:textColor="#666666"
+        android:textColorHint="#AAADAD"
+        android:textCursorDrawable="@null" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D4D8D8" >
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        style="@style/BMHEditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="#00000000"
+        android:ems="10"
+        android:hint="Email Id"
+        android:inputType="textEmailAddress"
+        android:maxLength="30"
+        android:padding="10dp"
+        android:textColor="#666666"
+        android:textColorHint="#AAADAD"
+        android:textCursorDrawable="@null" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D4D8D8" >
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextSubject"
+        style="@style/BMHEditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="#00000000"
+        android:ems="10"
+        android:hint="Subject"
+        android:maxLength="30"
+        android:padding="10dp"
+        android:textColor="#666666"
+        android:textColorHint="#AAADAD"
+        android:textCursorDrawable="@null" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D4D8D8" >
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        style="@style/BMHEditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="#00000000"
+        android:ems="10"
+        android:hint="Message"
+        android:maxLength="1000"
+        android:padding="10dp"
+        android:minLines="4"
+        android:textColor="#666666"
+        android:textColorHint="#AAADAD"
+        android:textCursorDrawable="@null" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D4D8D8" >
+    </LinearLayout>
+
+
+</LinearLayout>

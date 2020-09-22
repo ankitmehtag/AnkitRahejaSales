@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/appbar_padding_top"
+    android:orientation="vertical"
+    android:background="@color/text_color_black">
+
+    <ImageView
+        android:id="@+id/imageView_clear"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginBottom="@dimen/margin_twenty"
+        app:srcCompat="@drawable/ic_clear_white" />
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:max="100"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/imageView_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_play_circle" />
+</LinearLayout>

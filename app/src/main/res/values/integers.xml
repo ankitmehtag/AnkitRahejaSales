@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<integer name="pagerId">9090</integer>
+    <integer name="project_data">9091</integer>
+    <integer name="transaction_obj">9092</integer>
+    <integer name="info">9093</integer>
+    <integer name="tag">9096</integer>
+    <integer name="broker_data">9094</integer>
+    <integer name="offer_code">19</integer>
+</resources>

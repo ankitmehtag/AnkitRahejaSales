@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+  xmlns:harsh="http://schemas.android.com/apk/res-auto" >
+
+     <item
+        android:id="@+id/action_list"
+        android:orderInCategory="101"
+        android:icon="@drawable/list"
+        harsh:showAsAction="always"
+        android:title="List"/>
+</menu>

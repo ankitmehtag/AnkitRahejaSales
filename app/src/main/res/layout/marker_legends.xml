@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:padding="8dp" 
+  android:visibility="gone"
+    >
+
+    <LinearLayout
+        android:id="@+id/llShowAll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvShowAll"
+            style="@style/BHMTextVIewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:minLines="2"
+            android:maxLines="2"
+            android:text="Show All"
+            android:textColor="@color/selected_underline"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/llUnderlineShowAll"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/selected_underline"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llNewLaunch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvNewLaunch"
+            style="@style/BHMTextVIewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:text="New Launch"
+            android:minLines="2"
+            android:maxLines="2"
+            android:drawableLeft="@drawable/pin_newlaunch_s"
+            android:textColor="@color/unselected_tv"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/llUnderlineNewLaunch"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/unselected_underline"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llUnder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvUnder"
+            style="@style/BHMTextVIewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:text="Under Construction"
+            android:drawableLeft="@drawable/pin_undercons_s"
+            android:minLines="2"
+            android:maxLines="2"
+            android:textColor="@color/unselected_tv"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/llUnderlineUnder"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/unselected_underline"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llReady"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvReady"
+            style="@style/BHMTextVIewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:minLines="2"
+            android:maxLines="2"
+            android:drawableLeft="@drawable/pin_readytomove_s"
+            android:text="Ready to move"
+            android:textColor="@color/unselected_tv"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/llUnderlineReady"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/unselected_underline"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

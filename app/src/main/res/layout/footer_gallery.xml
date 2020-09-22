@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRootFooterFilers"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:background="#ffffff"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:padding="1dp" >
+
+    <LinearLayout
+        android:id="@+id/llPhoto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|bottom"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llUnderlinePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/selected_underline"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_photo"
+            style="@style/BHMTextVIewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Photos"
+            android:textColor="@color/selected_underline"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llVideos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llUnderlineVideos"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/unselected_underline"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_video"
+            style="@style/BHMTextVIewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:minLines="2"
+            android:text="Videos"
+            android:textColor="@color/unselected_tv"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llConstion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llUnderlineConstraction"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/unselected_underline"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_const"
+            style="@style/BHMTextVIewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:minLines="2"
+            android:text="Construction Updates"
+            android:textColor="@color/unselected_tv"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llVirtual"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llUnderlineVirtual"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/unselected_underline"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_virtual"
+            style="@style/BHMTextVIewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:minLines="2"
+            android:text="  Virtual\nSite Visit"
+            android:textColor="@color/unselected_tv"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llUnderlineTour"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/unselected_underline"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_tour"
+            style="@style/BHMTextVIewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:minLines="2"
+            android:text="360 \nTour"
+            android:textColor="@color/unselected_tv"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

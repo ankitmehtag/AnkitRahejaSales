@@ -1,0 +1,596 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/land_back"
+    android:fitsSystemWindows="true" >
+    <com.views.VerticalScrollView
+        android:id="@+id/scrollViewroot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="25dp" >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true" >
+
+                            <TextView
+                                android:id="@+id/byCity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="25dp"
+                                android:drawablePadding="15sp"
+                                android:drawableRight="@drawable/down"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="SELECT CITY"
+                                android:textSize="18sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignLeft="@+id/byCity"
+                                android:layout_alignRight="@+id/byCity"
+                                android:layout_below="@+id/byCity"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#CCCCCC" >
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/layout_bg"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:id="@+id/byCity1"
+                                style="@style/BHMButtonStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/by_btns_selector"
+                                android:drawableRight="@drawable/down"
+                                android:text="BY CITY"
+                                android:textColor="@drawable/by_btns_text_selector"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <Button
+                                android:id="@+id/btnBuy"
+                                style="@style/BHMButtonStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/buy_rent_selector"
+                                android:text="BUY"
+                                android:textColor="@drawable/filter_tv_text_selector" />
+
+                            <Button
+                                android:id="@+id/btnRent"
+                                style="@style/BHMButtonStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/buy_rent_selector"
+                                android:text="RENT"
+                                android:textColor="@drawable/filter_tv_text_selector" />
+
+                            <Button
+                                android:id="@+id/btnAuction"
+                                style="@style/BHMButtonStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/buy_rent_selector"
+                                android:text="E-AUCTION"
+                                android:textColor="@drawable/filter_tv_text_selector" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tv_search_locality"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.90"
+                                android:layout_height="wrap_content"
+                                android:background="#00000000"
+                                android:capitalize="characters"
+                                android:gravity="center_vertical"
+                                android:drawableLeft="@drawable/land_marker"
+                                android:drawablePadding="5dp"
+                                android:hint="SEARCH LOCALITY, PROJECT OR BUILDER"
+                                android:minHeight="45dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textColor="#000000"
+                                android:inputType="textNoSuggestions|none"
+                                android:textColorHint="#383838"
+                                android:textCursorDrawable="@drawable/cursor"
+                                android:textSize="14sp" />
+                            <ImageView
+                                android:id="@+id/iv_clear_locality"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.10"
+                                android:padding="5dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:src="@drawable/crass"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:background="#CCCCCC" >
+                        </View>
+
+
+                        <!-- Set Residential/ Commercial -->
+
+                        <RelativeLayout
+                            android:id="@+id/Select_property"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layout_property"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#FFFFFF" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#FFFFFF"
+                                android:orientation="horizontal" >
+
+                                <Button
+                                    android:id="@+id/btn_residential"
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="40dp"
+                                    android:gravity="center"
+                                    android:layout_weight="1.0"
+                                    android:text="@string/select_relevent"
+                                    android:background="@drawable/commercial"
+                                    android:textColor="@color/text_state_yellow_white"
+                                    android:textSize="16sp" />
+
+                                <!-- <View style="@style/DividerVertical" /> -->
+
+                                <Button
+                                    android:id="@+id/btn_commercial"
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1.0"
+                                    android:gravity="center"
+                                    android:background="@drawable/commercial"
+                                    android:textColor="@color/text_state_yellow_white"
+                                    android:text="@string/select_commercial"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_proprty_ico_root"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal" >
+                            <LinearLayout
+                                android:id="@+id/ll_resi_ico_container"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal"
+                                android:orientation="horizontal"
+                                android:visibility="visible"
+                                android:weightSum="4" >
+
+                                <CheckBox
+                                    android:id="@+id/chk_resi_flat"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.0"
+                                    android:background="#ffffff"
+                                    android:button="@null"
+                                    android:drawablePadding="10dp"
+                                    android:drawableTop="@drawable/custom_flat_design_new"
+                                    android:gravity="center_horizontal"
+                                    android:padding="5dp"
+                                    android:text="FLAT"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+
+                                <CheckBox
+                                    android:id="@+id/chk_resi_builder"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.0"
+                                    android:background="#ffffff"
+                                    android:button="@null"
+                                    android:drawablePadding="10dp"
+                                    android:drawableTop="@drawable/custom_builder_design_new"
+                                    android:gravity="center_horizontal"
+                                    android:padding="5dp"
+                                    android:text="BUILDER FLOORS"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+
+                                <CheckBox
+                                    android:id="@+id/chk_resi_plots"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.0"
+                                    android:background="#ffffff"
+                                    android:button="@null"
+                                    android:drawablePadding="10dp"
+                                    android:padding="5dp"
+                                    android:drawableTop="@drawable/custom_plots_design_new"
+                                    android:gravity="center_horizontal"
+                                    android:text="PLOTS"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+
+                                <CheckBox
+                                    android:id="@+id/chk_resi_house_villa"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.0"
+                                    android:background="#ffffff"
+                                    android:button="@null"
+                                    android:drawablePadding="10dp"
+                                    android:drawableTop="@drawable/custom_house_design_new"
+                                    android:gravity="center_horizontal"
+                                    android:padding="5dp"
+                                    android:text="HOUSE/VILLA"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_com_ico_container"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:visibility="gone"
+                                android:weightSum="3">
+
+                                <CheckBox
+                                    android:id="@+id/chk_com_shops"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.0"
+                                    android:background="#ffffff"
+                                    android:button="@null"
+                                    android:drawablePadding="10dp"
+                                    android:drawableTop="@drawable/custom_shops_design_new"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:textColor="@color/black"
+                                    android:text="SHOPS"
+                                    android:textSize="10sp" />
+
+                                <CheckBox
+                                    android:id="@+id/chk_com_office"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.0"
+                                    android:background="#ffffff"
+                                    android:button="@null"
+                                    android:drawablePadding="10dp"
+                                    android:drawableTop="@drawable/custom_office_design_new"
+                                    android:gravity="center_horizontal"
+                                    android:padding="5dp"
+                                    android:textColor="@color/black"
+                                    android:text="OFFICE"
+                                    android:textSize="10sp" />
+
+                                <CheckBox
+                                    android:id="@+id/chk_com_service_apartment"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.0"
+                                    android:background="#ffffff"
+                                    android:button="@null"
+                                    android:drawablePadding="10dp"
+                                    android:drawableTop="@drawable/custom_service_design_new"
+                                    android:gravity="center_horizontal"
+                                    android:padding="5dp"
+                                    android:textColor="@color/black"
+                                    android:text="SERVICE APARTMENT"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <Button
+                            android:id="@+id/buttonSearch"
+                            style="@style/BHMButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/commercial"
+                            android:textColor="@color/text_state_yellow_white"
+                            android:text="SEARCH PROPERTY"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Add all xml file of prevouse use -->
+
+
+            <!-- END  Add all xml file of prevouse use -->
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager_hot_proj"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#ffffff"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#edefed"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/developer_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tv_feature_developer_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Featured Developers"
+                        android:textColor="#383838"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/pagerDeveloper"
+                            android:layout_width="match_parent"
+                            android:layout_height="365dp"
+                            android:layout_gravity="center"
+                            android:background="#edefed" />
+
+                       <!-- <Button
+                            android:id="@+id/btnRetryDev"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:background="@drawable/retry_btn_selector"
+                            android:padding="8dp"
+                            android:text="Something went wrong. Tap to retry."
+                            android:textAllCaps="false"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:visibility="gone" />-->
+
+                        <ProgressBar
+                            android:id="@+id/progBarDev"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:visibility="gone" />
+
+                        <ImageButton
+                            android:id="@+id/left_nav"
+                            android:layout_width="40dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginTop="118dp"
+                            android:background="@null"
+                            android:src="@drawable/feature_back"
+                            android:visibility="gone" />
+
+                        <ImageButton
+                            android:id="@+id/right_nav"
+                            android:layout_width="40dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginTop="118dp"
+                            android:background="@null"
+                            android:src="@drawable/feature_next"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/project_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#EDEFED"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tv_feature_project_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Featured Projects"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <!-- <Button -->
+                    <!-- android:id="@+id/btnShowAllProjects" -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:background="@drawable/needs_selector" -->
+                    <!-- android:minHeight="35dp" -->
+                    <!-- android:paddingLeft="10dp" -->
+                    <!-- android:paddingRight="10dp" -->
+                    <!-- android:text="SEE ALL" -->
+                    <!-- android:textColor="#ffffff" -->
+                    <!-- android:textSize="14sp" /> -->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="#edefed" >
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/pagerProjects"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/pagerHeightProjects"
+                            android:layout_gravity="center"
+                            android:background="#edefed" >
+                        </androidx.viewpager.widget.ViewPager>
+
+                       <!-- <Button
+                            android:id="@+id/btnRetryProj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/retry_btn_selector"
+                            android:padding="8dp"
+                            android:text="Something went wrong. Tap to retry."
+                            android:textAllCaps="false"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:visibility="gone" />-->
+
+                        <ProgressBar
+                            android:id="@+id/progBarProj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.views.VerticalScrollView>
+
+    <RelativeLayout
+        android:id="@+id/desable_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:fitsSystemWindows="true"
+        android:gravity="top|center_horizontal"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/byCityFeded"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="15sp"
+                android:drawableRight="@drawable/down"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="SELECT CITY"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/byCityFeded"
+                android:layout_alignRight="@+id/byCityFeded"
+                android:layout_below="@+id/byCityFeded"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="#CCCCCC" >
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loader_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99ffffff"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/inclide_view"
+            layout="@layout/loader_view" />
+    </RelativeLayout>
+</RelativeLayout>

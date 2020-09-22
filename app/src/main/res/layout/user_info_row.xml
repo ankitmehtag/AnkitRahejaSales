@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bhk_one"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:minHeight="35dp"
+        android:weightSum="2" >
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:ellipsize="end"
+            android:paddingLeft="5dp"
+            android:paddingRight="2dp"
+            android:text="Title:"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:ellipsize="end"
+            android:paddingLeft="2dp"
+            android:paddingRight="5dp"
+            android:text="-"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/div_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_boarder"
+        android:orientation="vertical"
+        android:visibility="visible">
+    </View>
+
+</LinearLayout>

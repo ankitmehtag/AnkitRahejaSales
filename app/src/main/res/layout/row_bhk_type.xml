@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bhk_one"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/brown_border"
+    android:minHeight="36dp"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <TextView
+        android:id="@+id/bhk_type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:textColor="#969696"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/div_1"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#F7F7F2"
+        android:orientation="vertical"></View>
+
+    <TextView
+        android:id="@+id/bhk_sqft"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/div_2"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#F7F7F2"
+        android:orientation="vertical"></View>
+
+    <TextView
+        android:id="@+id/bhk_price"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+</LinearLayout>

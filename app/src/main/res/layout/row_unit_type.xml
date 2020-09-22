@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.70"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvdisplayName"
+                    style="@style/BHMTextVIewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="200dp"
+                    android:paddingLeft="4dp"
+                    android:textSize="16sp"
+                    android:maxLines="2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvBHKType"
+                    style="@style/BHMTextVIewStyle"
+                    android:layout_width="0.40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:paddingLeft="4dp"
+                    android:text=""
+                    android:textColor="#888A89" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvNoOfUnits"
+                style="@style/BHMTextVIewStyle"
+                android:layout_width="0dp"
+                android:layout_weight="0.30"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:maxLines="1"
+               android:gravity="right"
+                android:textColor="@color/blue_color"
+                android:textStyle="normal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvPriceshow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="Arial"
+                android:gravity="center"
+                android:text="@string/Price_marker"
+                android:textColor="#909090"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvPricePerSqft"
+                style="@style/BHMTextVIewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:textColor="#909090" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvAreaRange_title"
+                    style="@style/BHMTextVIewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:singleLine="true"
+                    android:text="@string/area_range"
+                    android:textColor="#909090" />
+
+                <TextView
+                    android:id="@+id/tvPriceRange_title"
+                    style="@style/BHMTextVIewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:singleLine="true"
+                    android:text="@string/price_range"
+                    android:textColor="#909090" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/tvAreaRange"
+                    style="@style/BHMTextVIewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#909090" />
+
+
+                <TextView
+                    android:id="@+id/tvPriceRange"
+                    style="@style/BHMTextVIewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#909090" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/static_unit_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/static_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Static_Unit" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

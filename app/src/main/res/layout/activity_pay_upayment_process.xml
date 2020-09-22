@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey_root_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar_brown" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/blue_color"
+        app:tabIndicatorHeight="5dp"
+        app:tabSelectedTextColor="@color/blue_color"
+        app:tabTextColor="@color/tab_txt_color"
+        app:tabMode="scrollable"/>
+    <View
+        android:id="@+id/tab_line"
+        android:layout_below="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blue_color"/>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@+id/tab_line"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</RelativeLayout>

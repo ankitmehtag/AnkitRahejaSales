@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <!-- Header aligned to top -->
+
+    <include layout="@layout/app_bar_brown" />
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#714617" >
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/arrow_left"
+            android:gravity="center" />
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/textView1" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginLeft="2dp" -->
+        <!-- android:layout_toRightOf="@+id/back_button" -->
+        <!-- android:text="@string/project_header_concel" -->
+        <!-- android:textColor="#ffffff" -->
+        <!-- android:textSize="18sp" /> -->
+
+        <TextView
+            android:id="@+id/tv_reset_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/project_header"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="21dp"
+            android:layout_toRightOf="@+id/back_button"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:text="@string/project_header_filter"
+            android:textColor="#ffffff"
+            android:typeface="monospace"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_18" />
+    </RelativeLayout>
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/header" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="50dp" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:layout_alignParentTop="true" -->
+    <!-- android:background="#714617" > -->
+
+
+    <!-- <ImageButton -->
+    <!-- android:id="@+id/back_button" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:background="@drawable/back_img" -->
+    <!-- android:gravity="center" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/text_local" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:layout_toRightOf="@+id/back_button" -->
+    <!-- android:text="Cancel" -->
+    <!-- android:textColor="#ffffff" -->
+    <!-- android:textSize="18sp" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerHorizontal="true" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:gravity="center" -->
+    <!-- android:text="Sort Locality" -->
+    <!-- android:textColor="#ffffff" -->
+    <!-- android:textSize="22sp" /> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- Footer aligned to bottom -->
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="#009746"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/location_apply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#db9d29"
+            android:text="APPLY FILTERS"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:orientation="vertical" >
+
+        <!-- <TextView -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="40dp" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginLeft="15dp" -->
+        <!-- android:gravity="center_vertical" -->
+        <!-- android:text="Sort By" -->
+        <!-- android:textAppearance="?android:attr/textAppearanceMedium" -->
+        <!-- android:textColor="#000000" -->
+        <!-- android:textSize="18sp" -->
+        <!-- android:textStyle="bold" /> -->
+
+        <View style="@style/Divider" />
+
+        <ListView
+            android:id="@+id/lv_filter"
+            android:layout_width="fill_parent"
+            android:layout_height="375dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:choiceMode="singleChoice"
+            android:drawable="@drawable/custom_checkbox_design" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

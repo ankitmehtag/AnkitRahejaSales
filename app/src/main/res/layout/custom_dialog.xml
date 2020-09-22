@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#66000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="256dp"
+        android:layout_height="158dp"
+        android:background="#C05E5A"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <!-- <RelativeLayout -->
+        <!-- android:id="@+id/header" -->
+        <!-- android:layout_width="255dp" -->
+        <!-- android:layout_height="35dp" -->
+        <!-- android:layout_marginTop="-40dp" -->
+        <!-- android:background="@drawable/dialogheader" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/heading" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerHorizontal="true" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:text="@string/head" -->
+        <!-- android:textColor="@color/header_color" -->
+        <!-- android:textSize="20dp" -->
+        <!-- android:textStyle="bold" /> -->
+        <!-- </RelativeLayout> -->
+
+        <RelativeLayout
+            android:id="@+id/imageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/cameraLAyout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp" >
+
+                <ImageView
+                    android:id="@+id/cameraimage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/cmeraicon" />
+
+                <TextView
+                    android:id="@+id/cameraText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cameraimage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Camera"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/divider" -->
+            <!-- android:layout_width="1dp" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:layout_toRightOf="@id/cameraLAyout" -->
+            <!-- android:background="@color/divide" > -->
+            <!-- </RelativeLayout> -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/cameraLAyout" >
+
+                <ImageView
+                    android:id="@+id/galleryimage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/gallery_icon" />
+
+                <TextView
+                    android:id="@+id/galleryText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/galleryimage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Gallery"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

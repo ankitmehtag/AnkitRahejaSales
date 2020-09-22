@@ -1,0 +1,306 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img3"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pagerDeveloper"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/ll_indi"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/iv_indi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search_selected"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="visible"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_indicators"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/indicator1"
+                android:layout_width="@dimen/circle_width"
+                android:layout_height="@dimen/circle_width"
+                android:padding="1dp"
+                android:src="@drawable/indicator_selected" />
+
+            <ImageView
+                android:id="@+id/indicator2"
+                android:layout_width="@dimen/circle_width"
+                android:layout_height="@dimen/circle_width"
+                android:padding="1dp"
+                android:src="@drawable/indicator_unselected" />
+
+            <ImageView
+                android:id="@+id/indicator3"
+                android:layout_width="@dimen/circle_width"
+                android:layout_height="@dimen/circle_width"
+                android:padding="1dp"
+                android:src="@drawable/indicator_unselected" />
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/indicator4" -->
+            <!-- android:layout_width="@dimen/circle_width" -->
+            <!-- android:layout_height="@dimen/circle_width" -->
+            <!-- android:padding="1dp" -->
+            <!-- android:src="@drawable/indicator_unselected" -->
+            <!-- android:visibility="gone" /> -->
+
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/indicator5" -->
+            <!-- android:layout_width="@dimen/circle_width" -->
+            <!-- android:layout_height="@dimen/circle_width" -->
+            <!-- android:padding="1dp" -->
+            <!-- android:src="@drawable/indicator_unselected" -->
+            <!-- android:visibility="gone" /> -->
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlFbLogin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="2dp"
+            android:background="#4567AF"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Login with Facebook"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="#3A5999"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:src="@drawable/fb" />
+        </RelativeLayout>
+
+        <!-- <com.google.android.gms.common.SignInButton -->
+        <!-- android:id="@+id/btn_sign_in" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="45dp" -->
+        <!-- android:layout_marginTop="18dp" -->
+        <!-- android:layout_marginLeft="@dimen/activity_horizontal_margin" -->
+        <!-- android:layout_marginRight="@dimen/activity_horizontal_margin" /> -->
+
+        <RelativeLayout
+            android:id="@+id/rlGLogin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="10dp"
+            android:background="#EB5A49"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Login with Google+"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="#DD4937"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:src="@drawable/gplus" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="OR"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_botton_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/signIn"
+                    style="@style/BHMButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:minHeight="20dp"
+                    android:text="LOGIN"
+                    android:background="@color/blue_color"
+                    android:textColor="@color/text_state_white_grey"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/register"
+                    style="@style/BHMButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:minHeight="20dp"
+                    android:text="SIGN UP"
+                    android:background="@color/blue_color"
+                    android:textColor="@color/text_state_white_grey"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="View our"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvPrivacyPolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text=" Privacy policy"
+                    android:textColor="@color/blue_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/aur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text=" and "
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvTermsOfUse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/terms_of_services"
+                    android:textColor="@color/blue_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/skip"
+                    style="@style/BHMButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey"
+                    android:textColor="@color/text_state_white_yellow"
+                    android:minHeight="18dp"
+                    android:text="Skip this for now" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/loader_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99ffffff"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/inclide_view"
+            layout="@layout/loader_view" />
+    </RelativeLayout>
+
+</RelativeLayout>

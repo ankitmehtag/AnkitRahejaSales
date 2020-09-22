@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F4"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp" >
+
+                <TextView
+                    style="@style/briceBreakTvStyle"
+                    android:text="Apartment Type" />
+
+                <TextView
+                    android:id="@+id/tvAprtmentType"
+                    style="@style/briceBreakTvStyle"
+                    android:gravity="right"
+                    android:text="4 BHK" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp" >
+
+                <TextView
+                    style="@style/briceBreakTvStyle"
+                    android:text="Apartment Size" />
+
+                <TextView
+                    android:id="@+id/tvAprtmentSize"
+                    style="@style/briceBreakTvStyle"
+                    android:gravity="right"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp" >
+
+                <TextView
+                    style="@style/briceBreakTvStyle"
+                    android:text="Rent" />
+
+                <TextView
+                    android:id="@+id/tvRentAmount"
+                    style="@style/briceBreakTvStyle"
+                    android:gravity="right"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp" >
+
+                <TextView
+                    style="@style/briceBreakTvStyle"
+                    android:text="Security Deposit" />
+
+                <TextView
+                    android:id="@+id/tvSecurityDepo"
+                    style="@style/briceBreakTvStyle"
+                    android:gravity="right"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/briceBreakTvStyle"
+                    android:text="Discount" />
+
+                <TextView
+                    android:id="@+id/tvDiscount"
+                    style="@style/briceBreakTvStyle"
+                    android:gravity="right"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDiscountedBSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/briceBreakTvStyle"
+                    android:text="BSP After Discount" />
+
+                <TextView
+                    android:id="@+id/tvBSPAfterDiscount"
+                    style="@style/briceBreakTvStyle"
+                    android:gravity="right"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp" >
+
+                <TextView
+                    style="@style/briceBreakTvStyle"
+                    android:text="Maintanance Charge" />
+
+                <TextView
+                    android:id="@+id/tvMaintance"
+                    style="@style/briceBreakTvStyle"
+                    android:gravity="right"
+                    android:text="0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="15dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grand Total"
+                android:textColor="#B8B8B8" />
+
+            <TextView
+                android:id="@+id/tvGrandTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_accept"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:background="#3FA9E2"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accept"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

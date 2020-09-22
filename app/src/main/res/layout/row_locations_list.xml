@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="@string/nearby_sectors"
+        android:padding="5dp"
+        android:textSize="19sp"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/all_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="160dp"
+            android:layout_height="160dp" >
+
+            <ImageView
+                android:id="@+id/imageViewLoc"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvReturnPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/black_gradient_bg"
+                android:drawableLeft="@drawable/returns_year"
+                android:padding="4dp"
+                android:paddingBottom="5dp"
+                android:drawablePadding="5dp"
+                android:text="7% in 1 Year"
+                android:textColor="#00FF00"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="2dp" >
+
+            <LinearLayout
+                android:id="@+id/ll_locality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_loc_list_name"
+                    style="@style/BHMTextVIewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:paddingLeft="4dp"
+                    android:text="Sohna Road"
+                    android:textAllCaps="true"
+                    android:maxLines="2"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_loc_rating"
+                    style="@style/BHMTextVIewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/ic_star"
+                    android:gravity="center"
+                    android:paddingTop="1dp"
+                    android:text="1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/sub_locality"
+                android:layout_below="@+id/ll_locality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_sublocation"
+                    style="@style/BHMTextVIewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="4dp"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_price"
+                android:layout_below="@+id/sub_locality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="4dp"
+                    android:text="@string/priceMark"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_avg_price"
+                    style="@style/BHMTextVIewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="4dp"
+                    android:text="4/5"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_projects"
+                android:layout_below="@+id/ll_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_no_of_projects"
+                    style="@style/BHMTextVIewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="4dp"
+                    android:text="Projects : 35 "
+                    android:textColor="#b9b9b9"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_infra"
+                    style="@style/BHMTextVIewStyle"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/infra_bg"
+                    android:gravity="center"
+                    android:text="Infra\n1"
+                    android:textColor="#ffffff"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:id="@+id/tv_needs"
+                    style="@style/BHMTextVIewStyle"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/infra_bg"
+                    android:gravity="center"
+                    android:text="Needs\n1"
+                    android:textColor="#ffffff"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:id="@+id/tv_lifestyle"
+                    style="@style/BHMTextVIewStyle"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/infra_bg"
+                    android:gravity="center"
+                    android:text="Lifestyle\n1"
+                    android:textColor="#ffffff"
+                    android:textSize="9sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

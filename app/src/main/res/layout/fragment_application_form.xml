@@ -1,0 +1,389 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_root_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <EditText
+                android:id="@+id/edApplicantName"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E4E6E5"
+                android:ems="10"
+                android:hint="@string/Name"
+                android:visibility="gone"
+                android:maxLength="30"
+                android:padding="10dp"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:textCursorDrawable="@null" >
+
+                <requestFocus />
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/edCoappName"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E4E6E5"
+                android:ems="10"
+                android:hint="Co-applicant Name"
+                android:maxLength="30"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:textCursorDrawable="@null" >
+
+                <requestFocus />
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/edRelationWithCoappli"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E4E6E5"
+                android:ems="10"
+                android:hint="Relation with Co-applicant"
+                android:maxLength="30"
+                android:padding="10dp"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:visibility="gone"
+                android:textCursorDrawable="@null" >
+
+                <requestFocus />
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/edResidentOf"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E4E6E5"
+                android:ems="10"
+                android:hint="Resident of"
+                android:maxLength="30"
+                android:padding="10dp"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:visibility="gone"
+                android:textCursorDrawable="@null" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/edPinCode"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E4E6E5"
+                android:ems="10"
+                android:hint="Pin code"
+                android:maxLength="20"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:textCursorDrawable="@null" >
+
+                <requestFocus />
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/edTelephoneNo"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E4E6E5"
+                android:ems="10"
+                android:hint="Telephone no."
+                android:inputType="number"
+                android:maxLength="20"
+                android:padding="10dp"
+                android:textColor="#666666"
+                android:visibility="gone"
+                android:textColorHint="#AAADAD"
+                android:textCursorDrawable="@null" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/edMobile"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E4E6E5"
+                android:ems="10"
+                android:maxLength="10"
+                android:hint="Mobile no."
+                android:inputType="number"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:textCursorDrawable="@null" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/et_email"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E4E6E5"
+                android:ems="10"
+                android:hint="@string/Email"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:textCursorDrawable="@null" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/edNationality"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E4E6E5"
+                android:ems="10"
+                android:hint="Nationality"
+                android:maxLength="30"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:textCursorDrawable="@null" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/edPanno"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E4E6E5"
+                android:ems="10"
+                android:hint="PAN No"
+                android:maxLength="30"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:textCursorDrawable="@null" >
+            </EditText>
+
+
+            <LinearLayout
+                android:id="@+id/llRadios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/radioResidantIndian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Resident Indian"
+                        android:textColor="#666666" />
+
+                    <RadioButton
+                        android:id="@+id/radioNonResidentIndian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Non Resident Indian"
+                        android:textColor="#666666" />
+
+                    <RadioButton
+                        android:id="@+id/radioPersonofIndianOrigin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Person of Indian Origin"
+                        android:textColor="#666666" />
+
+                    <RadioButton
+                        android:id="@+id/radioNonResident"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Non Resident"
+                        android:textColor="#666666" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edAddress"
+                style="@style/BMHEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E4E6E5"
+                android:ems="10"
+                android:gravity="top|left"
+                android:hint="Address"
+                android:minLines="2"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:singleLine="false"
+                android:textColor="#666666"
+                android:textColorHint="#AAADAD"
+                android:textCursorDrawable="@null" >
+            </EditText>
+
+            <LinearLayout
+                android:id="@+id/llPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+                
+                <Button 
+                    android:id="@+id/btnSelectPhoto"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Select Photograph"
+                    android:textSize="16sp"
+                    android:textColor="#666666"
+                    android:minHeight="35dp"
+                    android:padding="8dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/selectfile_selctor"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgPhoto"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/app_icon" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/llPAN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+                
+                <Button 
+                    android:id="@+id/btnSelectPan"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Select PAN card"
+                    android:textSize="16sp"
+                    android:textColor="#666666"
+                    android:minHeight="35dp"
+                    android:padding="8dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/selectfile_selctor"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgPan"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/app_icon" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/llAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+                
+                <Button 
+                    android:id="@+id/btnSelectAddProof"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Select Address Proof"
+                    android:textSize="16sp"
+                    android:textColor="#666666"
+                    android:minHeight="35dp"
+                    android:padding="8dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/selectfile_selctor"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgAddProof"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/app_icon" />
+                
+            </LinearLayout>
+            
+            <!-- <TextView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:textColor="#979797" -->
+            <!-- android:textSize="14sp" -->
+            <!-- android:layout_marginTop="10dp" -->
+            <!-- android:text="By clicking Sign up, yo agree to BMH user agreement, Privacy Policy, Cookie Policy."/> -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#AEB0AF" />
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#D9DBDA"
+                android:onClick="registerOnClick"
+                android:text="Submit"
+                android:textAllCaps="true"
+                android:textColor="#009745"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/relativeLayout">
+
+        <include
+            android:id="@+id/inclide_view"
+            layout="@layout/loader_view" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/imgBanner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" >
+
+            <ImageView
+                android:id="@+id/imgDevBanner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/layout_white"
+                android:gravity="center"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:src="@drawable/ic_star" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dev_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgBanner"
+            android:background="@drawable/layout_linear" >
+
+            <RelativeLayout
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/builder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:text="BUILDER NAME"
+                    android:textColor="#383838"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_pre_launch"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/re_ready" >
+
+                <TextView
+                    android:id="@+id/pre_launch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/pre_launch"
+                    android:textColor="#383838" />
+
+                <TextView
+                    android:id="@+id/new_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignRight="@+id/pre_launch"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:text="50"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#64401B" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_constraction"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/re_pre_launch" >
+
+                <TextView
+                    android:id="@+id/constraction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="UNDER CONSTRUCTION"
+                    android:textColor="#383838" />
+
+                <TextView
+                    android:id="@+id/under_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignRight="@+id/constraction"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:text="50"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#64401B" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvDeveloperDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/read_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDeveloperDetail"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:maxLines="3"
+                android:text="Read More"
+                android:textColor="#25980b"
+                android:textSize="16dp"
+                android:visibility="gone" />
+
+            <!-- <Button -->
+            <!-- android:id="@+id/btnShowAllProj" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_below="@+id/re_constraction" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:layout_marginBottom="20dp" -->
+            <!-- android:layout_marginTop="15dp" -->
+            <!-- android:background="@drawable/gold_needs_selector" -->
+            <!-- android:gravity="center" -->
+            <!-- android:minHeight="35dp" -->
+            <!-- android:paddingLeft="10dp" -->
+            <!-- android:paddingRight="10dp" -->
+            <!-- android:text="VIEW ALL PROJECTS" -->
+            <!-- android:textColor="#ffffff" -->
+            <!-- android:textSize="22sp" /> -->
+
+            <Button
+                android:id="@+id/btnShowAllProj"
+                style="@style/BHMButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/re_constraction"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/blue_color"
+                android:textColor="@color/text_state_white_grey"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="VIEW ALL PROJECTS"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/re_ready"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/name"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/ready"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="READY TO MOVE"
+                    android:textColor="#383838" />
+
+                <TextView
+                    android:id="@+id/ready_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:text="50"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#64401B" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvDeveloperName"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/dev_details"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="FEATURED DEVELOPERS"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvYearOfEstablishment"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/dev_details"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="year established"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvAreaDelivered"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignLeft="@+id/tvYearOfEstablishment"
+            android:layout_below="@+id/tvYearOfEstablishment"
+            android:layout_marginBottom="5dp"
+            android:text="area delivered"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

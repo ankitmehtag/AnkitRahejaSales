@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/proj_detail_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/app_bar_brown" />
+
+    <WebView
+        android:id="@+id/webViewTerms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- <LinearLayout -->
+
+
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:gravity="center" -->
+    <!-- android:padding="4dp" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/btn_accept" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:text="Accept" -->
+    <!-- android:padding="12dp" -->
+    <!-- android:background="#3FA9E2" -->
+    <!-- android:textColor="#ffffff" -->
+    <!-- android:textSize="20sp" /> -->
+    <!-- </LinearLayout> -->
+
+</LinearLayout>

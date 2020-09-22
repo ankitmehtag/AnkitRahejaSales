@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sales App</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="action_sync">Sync</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="author">Author</string>
+    <string name="txt_btn_save">Save</string>
+
+    <!-- <string name="map_api_key">AIzaSyATLSaackwntGkcmqk-YkIIPVJTjl51Ijs</string> -->
+    <!-- <string name="map_api_key">AIzaSyCEL5dmQC2czbec6ey-bWNpaFaKXBuRbHo</string> -->
+
+    <!-- builder.com@gmail.com -->
+    <string name="map_api_key">AIzaSyA0TxISmHfgdBwQuLcVG68Yt5fA_GUoqLw</string>
+    <!-- <string name="map_api_key">AIzaSyDFDu8AWp0qewzUlPcO2iSnhUGb0CRR9Xk</string>-->
+    <!-- Splash activuty -->
+
+    <string name="select2">Choose an item</string>
+
+    <!--      Direction Key  -->
+
+
+    <!-- Login activity -->
+    <string name="login">Login</string>
+    <string name="OR">OR</string>
+    <string name="Register">Register</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+
+    <!-- Register activity -->
+    <string name="Name">Name</string>
+    <string name="MobileNo">Mobile No.</string>
+    <string name="ConfirmPassword">Confirm Password</string>
+
+    <!-- Search activity -->
+
+    <string name="forgot"><u>Forgot Password?</u></string>
+    <!-- Property List activity -->
+
+
+    <!-- Unit_Filter Search Details -->
+
+    <string name="header_cancel">Cancel</string>
+    <string name="header_filter">Filter</string>
+    <string name="header_reset">Reset</string>
+    <string name="unit_sort">Sort By</string>
+    <string name="unit_price">Price</string>
+    <string name="unit_floor">Floor</string>
+    <string name="unit_filter_fllor">Filter by Floor</string>
+    <string name="unit_filter_floor_d">Showing available floors only</string>
+    <string name="unit_apply">APPLY FILTERS</string>
+    <string name="ground_floor">Ground</string>
+    <string name="I_floor">1</string>
+    <string name="II_floor">2</string>
+    <string name="III_floor">3</string>
+    <string name="IIIV_floor">4</string>
+    <string name="V_floor">5</string>
+    <string name="VI_floor">6</string>
+    <string name="VII_floor">7</string>
+    <string name="VIII_floor">8</string>
+    <string name="IX_fllor">9</string>
+    <string name="X_floor">10</string>
+    <string name="XI_floor">11</string>
+    <string name="XII_floor">12</string>
+    <string name="XIII_floor">13</string>
+    <string name="XIV_fllor">14</string>
+    <string name="XV_floor">15</string>
+    <string name="XVI_floor">16</string>
+    <string name="XVII_floor">17</string>
+    <string name="XVIII_floor">18</string>
+    <string name="XIX_floor">19</string>
+    <string name="XX_floor">20</string>
+    <string name="XXI_floor">21</string>
+    <string name="XXII_floor">22</string>
+    <string name="XXIII_floor">23</string>
+    <string name="set_text">Set Pickup Date &amp; Time</string>
+    <string name="set_time">I agree</string>
+
+    <string name="set_terms"> <u>T&amp;C</u> </string>
+
+    <string name="set_term_cond">By creating an account, you agree to our Terms &amp; Conditions</string>
+
+    <string name="pre_launch"> NEW &amp; PRE LAUNCH </string>
+
+
+    <!-- Filter Search of project property -->
+
+    <string name="project_header">RESET</string>
+    <string name="project_header_concel">Cancel</string>
+    <string name="project_header_filter">Filter</string>
+    <string name="project_filter_newl">  New  \nLaunch</string>
+    <string name="project_filter_underC">Under \nConstruction</string>
+    <string name="project_filter_ready">  Ready to\nmove in</string>
+    <string name="project_relevance">Relevance</string>
+    <string name="project_newest">Newest</string>
+    <string name="project_price">Price</string>
+    <string name="project_price_psf">Price PSF</string>
+    <string name="project_rating">Rating</string>
+    <string name="project_Possession">Possession</string>
+    <string name="project_infra">Infra</string>
+    <string name="project_needs">Needs</string>
+    <string name="project_lifestyle">Lifestyle</string>
+    <string name="project_returns">Returns</string>
+    <string name="only_show_project">Only show Project with</string>
+    <string name="discount">Discounts &amp; Offers available</string>
+    <string name="possession_project">Possession in</string>
+    <string name="select_property_type">Only One Typology(Residential/Commercial) can be selected at one time </string>
+    <string name="select_property">Select Property type</string>
+    <string name="select_relevent">RESIDENTIAL</string>
+    <string name="select_commercial">COMMERCIAL</string>
+    <string name="price_psf">₹ 500 to ₹  20000 </string>
+    <string name="priceMark"> ₹ </string>
+    <string name="price_psf_left"> 500</string>
+    <string name="price_psf_right"> 20000</string>
+    <string name="Rs_left"> 25 L</string>
+    <string name="Rs_right">₹  5 Cr</string>
+    <string name="Rs">₹  25 L to ₹  5 Cr</string>
+    <string name="Area_in_sqft">250 sqft to 8000 sqft</string>
+    <string name="Area_in_sqft_left">250 sqft</string>
+    <string name="Area_in_sqft_right">8000 sqft</string>
+    <string name="Price_marker">  ₹ </string>
+
+    <!-- Property details activity -->
+    <string name="title_activity_upload_property">UploadPropertyActivity</string>
+    <string name="enter_locality">Enter Locality</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="enter_site_visit_address">Please enter site visit address</string>
+    <string name="enter_city">Enter City</string>
+    <string name="enter_area_in_sq_ft">Enter Area in Sq.Ft</string>
+    <string name="enter_size_2_3_4_bhk_">Enter Size (2/3/4 Bhk)</string>
+    <string name="enter_price">Enter Price</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_property_list">PropertyListActivity</string>
+    <string name="title_activity_property_detail">PropertyDetailActivity</string>
+    <string name="title_activity_bmhmap">BMHMapActivity</string>
+    <string name="title_activity_uploader_detail">UploaderDetailActivity</string>
+    <string name="gallery">Gallery</string>
+    <string name="select_property_t">Select Property</string>
+    <string name="select_location">Select Location</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_search_property">SearchPropertyActivity</string>
+    <string name="title_activity_price_trends">PriceTrendsActivity</string>
+    <string name="title_activity_buy_rent_chooser">BuyRentChooserActivity</string>
+    <string name="title_activity_city_list">CityListActivity</string>
+    <string name="title_activity_area_list">AreaListActivity</string>
+    <string name="title_activity_location_list">LocationListActivity</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+
+    <string name="youTubeApiKey">AIzaSyCEL5dmQC2czbec6ey-bWNpaFaKXBuRbHo</string>
+    <!-- AIzaSyCxqE-6rtzcw8M5cQvuRkwqIOqvYjZKPSY -->
+
+    <string name="heading1">Overview</string>
+    <string name="heading2">Amenities</string>
+    <string name="heading3">Location</string>
+    <string name="heading4">Approvals</string>
+    <string name="heading5">Images/Videos</string>
+    <string name="heading6">Price Break Ups</string>
+    <string name="heading7">You need to pay an earnest money to place your Bid.</string>
+    <string name="localityData">Raheja Revanta is one of the benchmark luxury projects launched by Raheja Developers Ltd. Located at Sector 78, Gurgaon</string>
+    <string name="address">Address</string>
+    <string name="Username">Username</string>
+    <string name="Mobile">Mobile</string>
+    <string name="areaRange">Area Range</string>
+    <string name="priceRange">Price Range</string>
+    <string name="PossessionDate">Possession Date</string>
+    <string name="StartingPrice">Starting Price</string>
+    <string name="size">Size</string>
+    <string name="price">Price (Sq./Ft)</string>
+    <string name="samlpeFlat">Sample Flat</string>
+    <string name="Appreciation">Appreciation</string>
+    <string name="bestOffer">Best Offer</string>
+    <string name="openArea">Open Area</string>
+    <string name="powerBackUp">Power Back Up</string>
+    <string name="security">Security</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="cctv">CCTV</string>
+    <string name="business">Business Center</string>
+    <string name="shoppingArea">Shopping Area</string>
+    <string name="club">Club</string>
+    <string name="tennis">Tennis</string>
+    <string name="basket">Basket</string>
+    <string name="billiards">Billiards</string>
+    <string name="spa">Spa</string>
+    <string name="sauna">Sauna</string>
+    <string name="steamBath">Steam Bath</string>
+    <string name="jacuzzi">Jacuzzi</string>
+    <string name="gym">Gymnesium</string>
+    <string name="squash">Squash</string>
+    <string name="approvedBy">Approved By Housing Board,..........etc and have No Objection Certificate(Text related approvals will be here.)</string>
+    <string name="map">Map :</string>
+    <string name="priceDetail">Price :</string>
+    <string name="direction">Direction :</string>
+    <string name="balcony">Balconies :</string>
+    <string name="toilet">Toilets :</string>
+    <string name="wardrobe">Wardrobes :</string>
+    <string name="ac">AC :</string>
+    <string name="kitchen">Modular Kitchen :</string>
+    <string name="bid">Bid/Buy Now</string>
+    <string name="contact">Contact</string>
+    <string name="email">Email</string>
+    <string name="req">Request a Call Back</string>
+    <string name="parking">Parking Space</string>
+    <string name="lift">Lifts</string>
+    <string name="servant">Servant Room</string>
+    <string name="store">Store</string>
+    <string name="pooja">Pooja Room</string>
+    <string name="furnished">Furnished</string>
+    <string name="washing">Washing Area</string>
+    <string name="home">Home Automation</string>
+    <string name="pipedGas">Piped gas</string>
+    <string name="bookingAmt">Booking Amount</string>
+    <string name="totalAmt">Total Amount</string>
+    <string name="bsp">BSP</string>
+    <string name="plc">PLC</string>
+    <string name="clubMembership">Club Membership :</string>
+    <string name="edc">EDC + IDC :</string>
+    <string name="ibms">IBMS :</string>
+    <string name="ifms">IFMS :</string>
+    <string name="ebid">E-Bid Earnest Money :</string>
+    <string name="proceed">Proceed</string>
+    <string name="bidStart">Bid Start Price</string>
+    <string name="highestBid">Highest Bid</string>
+    <string name="total">Total :</string>
+    <string name="enterBid">Enter your bid</string>
+    <string name="title_activity_my_account">MyAccountActivity</string>
+    <string name="title_activity_change_pass">ChangePassActivity</string>
+    <string name="title_activity_choose_typology">ChooseTypologyActivity</string>
+    <string name="title_activity_bid_list">BidListActivity</string>
+    <string name="yourBid">Your Bid :</string>
+    <string name="bidOn">Bid is still on</string>
+    <string name="openTill">The bid is open till 15 Aug 2014 </string>
+    <string name="title_activity_bid_detail">BidDetailActivity</string>
+    <string name="title_activity_choose_area_map">ChooseAreaMapActivity</string>
+
+
+    <string name="action_map">Map</string>
+
+    <string name="price_marker"> ₹  </string>
+    <string name="price_proj">78 lacs+</string>
+
+    <string name="cont_desc_notification">Notifications</string>
+    <string name="action_list">List</string>
+    <string name="action_location_filter">Filter</string>
+    <string name="action_unit_filter">Filter</string>
+    <string name="action_name">Helpline: 9289055555</string>
+    <string name="helpline">Helpline:</string>
+    <string name="action_project_filter">Filter</string>
+    <string name="action_unit_back">Back</string>
+    <string name="action_bar_green">#36BE6D</string>
+    <string name="current_location">Current Location</string>
+    <string name="title_activity_unit_image_map">UnitImageMapActivity</string>
+    <string name="title_activity_tower_map">TowerMapActivity</string>
+    <string name="title_activity_testing_on">TestingOnActivity</string>
+    <string name="title_activity_unit_list">UnitListActivity</string>
+    <string name="title_activity_splash1">Splash1Activity</string>
+    <string name="title_activity_image_gellary">ImageGellaryActivity</string>
+    <string name="title_activity_unit_type_list">UnitTypeListActivity</string>
+    <string name="_1_cr_3_cr">1 Cr - 3 Cr</string>
+    <string name="_1000_5000_sqft">1000 – 5000 SqFt</string>
+    <string name="price_range">Price:</string>
+    <string name="area_range">Area:</string>
+
+    <string name="price_only">Price:</string>
+    <string name="area_only">Area:</string>
+
+
+    <string name="_40_units">40 Units</string>
+    <string name="_3_bhk_1_types_">3 BHK - 1 Type</string>
+    <string name="_20_lakh_1_cr">20 Lakh - 1 Cr</string>
+    <string name="_10_units">10 Units</string>
+    <string name="_2_bhk_2_types_">2 BHK - 2 Types</string>
+    <string name="title_activity_new_launches">NewLaunchesActivity</string>
+    <string name="indoor_swimmingp_pool">Indoor Swimmingp Pool</string>
+    <string name="badminton">Badminton</string>
+    <string name="kids_play_area">Kids Play Area</string>
+    <string name="basketball">Basketball</string>
+    <string name="yoga">Yoga</string>
+    <string name="kids_pool">Kids Pool</string>
+    <string name="table_tennis">Table Tennis</string>
+    <string name="soccer">Soccer</string>
+    <string name="cricket">Cricket</string>
+    <string name="cycling_track">Cycling Track</string>
+    <string name="go_carting">Go Carting</string>
+    <string name="skating_rink">Skating Rink</string>
+    <string name="mini_golf">Mini Golf</string>
+    <string name="sauna_bath">Sauna Bath</string>
+    <string name="steam">Steam</string>
+    <string name="card_room">Card Room</string>
+    <string name="dance_room">Dance Room</string>
+    <string name="indoor_games">Indoor Games</string>
+    <string name="bowling">Bowling</string>
+    <string name="jogging_running_track">Jogging Running Track</string>
+    <string name="fire_fighting_systems">Fire Fighting Systems</string>
+    <string name="cctv_surveillance">CCTV Surveillance</string>
+    <string name="smoke_sensors">Smoke Sensors</string>
+    <string name="smart_card_access">Smart Card Access</string>
+    <string name="_24x7_security">24X7 Security</string>
+    <string name="video_door_phone">Video Door Phone</string>
+    <string name="public_address_system">Public Address System</string>
+    <string name="emergency_alarm">Emergency alarm</string>
+    <string name="burglar_alarm">Burglar Alarm</string>
+    <string name="boom_barrier_access">Boom Barrier Access</string>
+    <string name="intercom">Intercom</string>
+    <string name="home_automation">Home Automation</string>
+    <string name="power_backup">Power Backup</string>
+    <string name="laundromat">Laundromat</string>
+    <string name="high_speed_elevators">High Speed Elevators</string>
+    <string name="automated_car_wash">Automated Car Wash</string>
+    <string name="piped_gas">Piped Gas</string>
+    <string name="ac_in_lobby">AC in Lobby</string>
+    <string name="solar_water_heater">Solar Water Heater</string>
+    <string name="treated_water_supply">Treated Water Supply</string>
+    <string name="podium_parking">Podium Parking</string>
+    <string name="central_wifi">Central Wifi</string>
+    <string name="leed_certified">LEED Certified</string>
+    <string name="shopping_area">Shopping Area</string>
+    <string name="restaurent">Restaurent</string>
+    <string name="pre_school">Pre School</string>
+    <string name="medical_facility">Medical Facility</string>
+    <string name="day_care_center">Day Care Center</string>
+    <string name="pet_area">Pet Area</string>
+    <string name="concierge">Concierge</string>
+    <string name="business_center">Business Center</string>
+    <string name="mini_theatre">Mini Theatre</string>
+    <string name="party_hall">Party Hall</string>
+    <string name="library">Library</string>
+    <string name="amphitheater">Amphitheater</string>
+    <string name="observatory">Observatory</string>
+    <!--     <string name="lift">Lift</string> -->
+    <string name="title_activity_full_screen_map">FullScreenMapActivity</string>
+    <string name="title_activity_full_screen_unit_map">FullScreenUnitMapActivity</string>
+    <string name="t_c">T &amp; C</string>
+    <string name="rate_comment">Rate &amp; Comment</string>
+    <string name="title_activity_comment_list">CommentListActivity</string>
+
+
+    <string name="schools">Schools</string>
+    <string name="hospitals">Hospitals</string>
+    <string name="shopping_malls">Shopping Malls</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="banks">Banks</string>
+    <string name="parks">Parks</string>
+    <string name="moview_theaters">Movie Theaters</string>
+    <string name="night_clubs">Night Clubs</string>
+    <string name="txt_this_unit_is_already_reserved">This unit is already reserved.</string>
+    <string name="txt_not_available"> Not Available</string>
+    <string name="network_not_available">Network not available</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="service_tax_of_club_mem">GST on Club Mem (18%)</string>
+    <string name="service_tax_of_plc">GST on PLC (12%)</string>
+    <!-- <string name="Rs">₹ </string> -->
+    <string name="open_drawer">Open</string>
+    <string name="close_drawer">Close</string>
+    <string name="title_activity_contact_us">ContactUsActivity</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="title_activity_favourite">FavouriteActivity</string>
+    <string name="favourite">Favourite</string>
+    <string name="logout">Logout</string>
+    <!--     <string name="fbAppId">1704582956435614</string> -->
+
+
+    <string name="fbAppId">326123407742973</string>
+
+
+    <string name="title_activity_terms_web">TermsWebActivity</string>
+    <string name="title_activity_filter_activity">FilterActivityActivity</string>
+    <string name="title_activity_payment_webview">PaymentWebviewActivity</string>
+    <string name="title_activity_payment_web_view">PaymentWebViewActivity</string>
+    <string name="title_activity_pay_token">PayTokenActivity</string>
+    <string name="title_activity_thank_you">ThankYouActivity</string>
+    <string name="price_breckup">View Price Breakup \n&amp; Payment Plan</string>
+    <string name="price_breck">View Price Breakup &amp; Payment Plan</string>
+    <string name="emi_calculator">EMI starts at ₹ 45.5K </string>
+
+
+    <string name="landmark">Landmark</string>
+    <string name="airport">Airport</string>
+    <string name="railway">Railways</string>
+    <string name="bus_stand">Bus Stand</string>
+    <string name="taxi_Services">Taxi Services</string>
+    <string name="school">Schools</string>
+    <string name="hospital">Hospitals</string>
+
+    <string name="departmental_stores">Departmental Stores</string>
+    <string name="atm">ATM</string>
+    <string name="pharmacies">Pharmacies</string>
+
+    <string name="bank">Banks</string>
+    <string name="park">Parks</string>
+    <string name="hotel">Hotels</string>
+    <string name="movie_theater">Movie Theaters</string>
+    <string name="night_club">Night Clubs</string>
+
+
+    <string name="text">Terms &amp; Conditions
+
+Please read these Terms and conditions carefully governing the Users’ access and participation to services hosted by www.bookmyhouse.com (hereinafter referred to as “BMH”) operated by Raisina Farms Pvt. Ltd. You are advised to peruse and understand the terms and conditions of access and usage contained hereunder. By accessing or using the Service you agree to be bound by these Terms:
+
+1. The User confirms that the User is 18 years and above and is competent to enter into contract.
+
+2. The User agrees and understands that BMH does not solicit customers for or on behalf of the Developer but only provides a platform for the Developer to showcase its projects across the platform and accordingly all queries/responses/claims shall be inter-se amongst the User and the Developer for which BMH cannot be held responsible.
+
+3. The User understands and knows that the online platform is owned and operated by the Bookmyhouse (BMH) which is merely an electronic facilitator for the users, to choose from various properties showcased by various enlisted Developers (not enlisted in order of preference). The BMH is merely a facilitator and that the User has exercised its individual independent judgment before relying on the information provided on the website and the Service Provider or the Developer cannot be held responsible for any loss, claim or damage caused due to use of this website. The User undertakes to be bound by the terms and conditions mentioned herein and as may be amended from time to time, privacy policy, notices and disclaimers displayed on the BMH website or which may be displayed on the website from time to time.BMH does not endorse or promote any of the Developers or any listings, postings, discount offers, schemes or information stated therein. All discounts, offers, schemes being offered by the Developer are for the purpose of soliciting customers in the ordinary course of business and do not give rise to any agency, partnership or any joint product arrangement with BMH. The User understands and undertakes that the Unit/project details stated on the website is informative, indicative in nature and pictorial representation is only for reference. The User is expected to make its independent enquiries and exercise due diligence before entering into any transaction regard the Developer, the product, the specifications, and the project thereof. The contents on the website has been developed based on the information provided by the Developer for which BMH cannot be held liable.BMH is merely a facilitator of the transaction and is neither a broker nor an agent of the Developer and thus the activity on the website does not in any manner be construed as sale of property.</string>
+    <string name="data_not_found_for_selected_city">Data not found for selected criteria</string>
+
+
+    <!--<string name="facebook_app_id">941342149304595</string>--><!-- from naresh fb account-->
+    <string name="facebook_app_id">294978390842012</string> <!-- from builder.com@gmail.com fb account and secrete key is uZG9X0V+2qkGbw9UL28HT45kaxc= -->
+    <string name="something_went_wrong">Something went wrong, Please Try again.</string>
+    <string name="low_to_high">Low to high</string>
+    <string name="high_to_low">High to low</string>
+
+    <string name="earliest_to_latest">Earliest to latest</string>
+    <string name="latest_to_earliest">Latest to earliest</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="txt_online_transaction">ONLINE TRANSACTION</string>
+    <string name="txt_check_collected">CHEQUE COLLECTED</string>
+
+    <string name="title_activity_heatmap">Map</string>
+    <string name="heat_map">Heat Map</string>
+    <string name="hot_projects">Hot Projects</string>
+    <string name="live_projects">Live Projects</string>
+    <string name="ready_to_move_projects">Ready to move in projects</string>
+    <string name="luxury_projects">Luxury Projects</string>
+    <string name="affordable_projects">Affordable Projects</string>
+    <string name="check_your_internet_connection">Check your internet connection</string>
+    <string name="no_result">NO SEARCH FOUND AS PER YOUR SEARCH CRITERIA</string>
+    <string name="less_options">Less Options</string>
+    <string name="more_options">More Options</string>
+    <string name="flat">FLAT</string>
+    <string name="builder_floor">BUILDER FLOOR</string>
+    <string name="plot">PLOT</string>
+    <string name="house_villa">HOUSE/VILLA</string>
+    <string name="shops_showroom">SHOPS/SHOWROOM</string>
+    <string name="office_space">OFFICE SPACE</string>
+    <string name="service_apartment">SERVICE APARTMENT</string>
+    <string name="image">Image</string>
+    <string name="no_favorite_items">No Items in your favorite list</string>
+    <string name="select_locality">Select Locality</string>
+    <string name="select_project">Select Project</string>
+    <string name="select_one_project">Select At Least One Project</string>
+    <string name="select_corporate_activity">Select Corporate Activity</string>
+    <string name="filter">Filter</string>
+    <string name="unable_to_fetch_gallery_data">Unable to fetch gallery data. Please try later.</string>
+    <string name="unable_to_connect_server">Unable to connect server. Please try later.</string>
+    <string name="reset">Reset</string>
+    <string name="successfully_logedin">Successfully logged in.</string>
+    <string name="unit_reserved">Unit reserved</string>
+    <string name="explore_this_neighbourhood">Explore Neighbourhood</string>
+    <string name="nearby_sectors">Nearby Sectors</string>
+    <string name="book_now">Book Now</string>
+    <string name="apply_now">Apply Now</string>
+    <string name="enquiry">Enquiry</string>
+    <string name="payment_status">Payment Status</string>
+    <string name="application_update">You are using old version of application. Please update it.</string>
+    <string name="bmh_tnc"><![CDATA[BMH T&C]]></string>
+    <string name="builder_tnc"><![CDATA[Builder T&C]]></string>
+    <string name="book_site_visit">Book Site Visit</string>
+    <string name="payment">Payment</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <string name="ok">OK</string>
+    <string name="Cancel">Cancel</string>
+
+    <string name="name_on_card">Name On Card</string>
+    <string name="card_number_format">xxxx-xxxx-xxxx-xxxx</string>
+    <string name="cvv">CVV</string>
+    <string name="month_format">MM</string>
+    <string name="year_format">YYYY</string>
+    <string name="expires">Expires:</string>
+    <string name="pay_now">PAY NOW</string>
+    <string name="enter_card_details">Enter Card Details</string>
+    <string name="enter_net_banking_details">Enter your Net Banking Details</string>
+    <string name="enter_cheque_dd_details">Enter your Cheque/Demand Draft details</string>
+    <string name="upload_cheque_or_dd">Upload Cheque/Demand Draft</string>
+    <string name="upload_cheque">Upload Cheque</string>
+    <string name="txt_attach_file">Attach File</string>
+    <string name="save_card">Save card for faster checkouts.</string>
+    <string name="enable_one_click_checkout">Enable one click checkout.</string>
+
+    <string name="choose_bank">Choose Your Bank</string>
+    <string name="select_bank">Select Other Banks</string>
+    <string name="bank_prompt">Select your Bank</string>
+    <string name="redirection_text">You will be redirected to your banks website to  complete payment</string>
+    <string name="make_payment">Make Payment</string>
+    <string name="save_payment">Save Payment</string>
+    <string name="transaction_canceled">Transaction could not proceed, please try again</string>
+    <string name="we_are_processing_your_request">We are processing your request</string>
+    <string name="unit_reserve">Your Unit is reserved for now, Our team will be in contact after processing of your request.</string>
+    <string name="unit_reserve_request">We have received booking request with below available information. Our sales representative will contact you soon.</string>
+
+    <string name="ddmmyyyy">DD/MM/YYYY</string>
+    <string name="cheque_number">Cheque number</string>
+    <string name="dd_number">DD number</string>
+    <string name="cheque_date">Cheque date</string>
+    <string name="dd_date">DD date</string>
+    <string name="attach_cheque">Attach Cheque Image</string>
+    <string name="attach_dd">Attach DD Image</string>
+    <string name="save_and_continue"><![CDATA[Save & Continue]]></string>
+    <string name="choose_payment_getaway">Choose payment getaway</string>
+    <string name="payu">PayU</string>
+    <string name="cc_avenue">CC Avenue</string>
+    <string name="now_ur_unit_is_reserved">Now your unit is reserved.</string>
+    <string name="i_agree">I Agree</string>
+    <string name="disclaimer">Disclaimer: By using or accessing the Website you agree with the Disclaimer without any qualification or limitation. This website is only for the purpose of providing information regarding real estate projects and properties in different geographies. Any information which is being provided on this website is not an advertisement or a solicitation. The information regarding real estate projects and properties provided herein have been collected from publicly available sources, and is yet to be verified as per RERA guidelines. Further, the company has not checked the RERA* registration status of the real estate projects listed herein. The company does not make any representation in regards to the compliances done against these projects. The Websites and all its content are provided with all faults on an \"as is\" and \"as available\" basis. Please note that you should make yourself aware about the RERA (Real Estate Regulation Development Act 2016) registration status of the listed real estate projects. You agree to our Terms of Service, Cookie, Privacy and Content Policies.</string>
+    <string name="disclaimer_part_1">Disclaimer: By using or accessing the Website you agree with the Disclaimer without any qualification or limitation. This website is only for the purpose of providing information regarding real estate projects and properties in different geographies. Any information which is being provided on this website is not an advertisement or a solicitation. The information regarding real estate projects and properties provided herein have been collected from publicly available sources, and is yet to be verified as per RERA guidelines. Further, the company has not checked the RERA* registration status of the real estate projects listed herein. The company does not make any representation in regards to the compliances done against these projects. The Websites and all its content are provided with all faults on an \"as is\" and \"as available\" basis. Please note that you should make yourself aware about the RERA (Real Estate Regulation Development Act 2016) registration status of the listed real estate projects. You agree to our</string>
+    <string name="terms_of_services">Terms of Service</string>
+    <string name="disclaimer_part_2">, Cookie,</string>
+    <string name="disclaimer_part_3">Content Policies.</string>
+    <string name="privacy">Privacy</string>
+
+
+    <string name="add_lead">Add Lead</string>
+    <string name="title_add_lead">Add Lead</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_mobile">Enter mobile number</string>
+    <string name="whats_next">What\'s Next</string>
+    <string name="txt_whats_next">Please select What\'s Next status</string>
+    <string name="enter_alternate_number">Enter alternate number</string>
+    <string name="enter_budget">Enter budget</string>
+    <string name="select_activity">Select activity</string>
+    <string name="cancel">Cancel</string>
+    <string name="remind_later">Remind later</string>
+    <string name="txt_button_done">Done</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile number</string>
+    <string name="alternate_number">Alternate number</string>
+    <string name="budget">Budget ( In Rupees)</string>
+    <string name="enter_valid_email">Enter valid email address</string>
+    <string name="enter_valid_user">Enter valid user name, Only Alphabet allowed. Name length range 3-30 characters</string>
+    <string name="title_lead">Lead</string>
+    <string name="enquiry_added_successfully">Enquiry added successfully</string>
+    <string name="enter_valid_mobile">Enter valid mobile number</string>
+    <string name="auto_date_time">Please enable automatic Date,Time &amp; Time Zone from settings screen.</string>
+    <string name="error_auto_update_time">Please enable automatic Date,Time &amp; Time Zone from settings screen and restart the app.</string>
+    <string name="project_not_found">Project s not found</string>
+    <string name="remark">Remarks</string>
+    <string name="enter_remark">Enter remark</string>
+    <string name="select_city">Select City</string>
+    <string name="select_micro_market">Select micro market</string>
+    <string name="data_not_synced">Data not synced. Please try after some time</string>
+    <string name="copyright">Version 1.0 \n Raheja Developers Limited</string>
+
+    <string name="remark_added_success">Remark added successfully</string>
+    <string name="user_profile">User Profile</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="confirm_pwd">Confirm New Password</string>
+    <string name="new_pwd">New Password</string>
+    <string name="old_pwd">Old Password</string>
+    <string name="enter_registered_email_id">Please enter your registered email id/mobile number</string>
+    <string name="sort">Sort</string>
+    <string name="earlier">Earlier</string>
+    <string name="later">Later</string>
+    <string name="sorted_by">Sort By</string>
+    <string name="business_name">Business Name</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="aadhar">Aadhar No.</string>
+    <string name="pan">Pan Card No.</string>
+    <string name="rera_registration">RERA Registration No.</string>
+    <string name="gst_registration">GST Registration No.</string>
+    <string name="rm_code">RM Code</string>
+    <string name="broker_firm_code">Broker Firm Code</string>
+    <string name="user_type">User Type</string>
+    <string name="alphaNumeric">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890</string>
+
+    <!--for Project list-->
+
+    <string name="OMA">OMA</string>
+    <string name="REVANTA">REVANTA</string>
+    <string name="ATHARVA">ATHARVA</string>
+    <string name="SHILAS">SHILAS</string>
+    <string name="VEDAANTA">VEDAANTA</string>
+    <string name="THEVEDAS">THE VEDAS</string>
+    <string name="VEDAANTAFLOORS">VEDAANTA FLOORS</string>
+    <string name="NAVODAYA">NAVODAYA</string>
+    <string name="SAMPADA">SAMPADA</string>
+    <string name="TRINITY">TRINITY</string>
+    <string name="HIGHWAYARCADE">HIGHWAY ARCADE</string>
+    <string name="KRISHNACOMMERICAL">KRISHNA COMMERICAL</string>
+    <string name="ARANYA">ARANYA</string>
+    <string name="KRISHNAHOUSHING">KRISHNA HOUSHING</string>
+    <string name="MAHESHWARA">MAHESHWARA</string>
+    <string name="VANYA">VANYA</string>
+    <string name="AKSHARADEENDAYALJANAWASYOJANA">AKSHARA DEEN DAYAL JAN AWAS YOJANA</string>
+
+
+
+
+
+
+
+    <string name="Name_mandatory">Name*</string>
+    <string name="Email_mandatory">Email*</string>
+    <string name="Email_id_mandatory">Enter registered e-mail id/mobile number*</string>
+    <string name="MobileNo_mandatory">Mobile No.*</string>
+    <string name="business_name_mandatory">Business Name*</string>
+    <string name="state_mandatory">State*</string>
+    <string name="city_mandatory">City*</string>
+    <string name="aadhar_mandatory">Aadhar No.*</string>
+    <string name="pan_mandatory">Pan Card No.*</string>
+    <string name="rera_registration_mandatory">RERA Registration No.*</string>
+    <string name="gst_registration_mandatory">GST Registration No.*</string>
+    <string name="rm_code_mandatory">RM Code*</string>
+    <string name="broker_firm_code_mandatory">Broker Firm Code*</string>
+    <string name="from_date">From Date</string>
+    <string name="to_date">Till Date</string>
+    <string name="from_date_toast_message">From date can\'t be greater than To date.</string>
+    <string name="to_date_toast_message">To date can\'t be less than From date.</string>
+    <string name="select_date_first"> Please select date first. </string>
+    <string name="select_closure_project"> Please select closure project. </string>
+    <string name="please_select_date_first">Please select date. </string>
+    <string name="please_select_meeting_date_first">Please select meeting date first. </string>
+    <string name="please_select_site_visit_date">Please select site visit date First. </string>
+    <string name="please_select_time">Please select time. </string>
+    <string name="please_select_meeting_time">Please select meeting time. </string>
+    <string name="please_select_site_visit_time">Please select site visit time. </string>
+    <string name="please_select_time_first">Please select any time. </string>
+    <string name="date_picker_error"> You can\'t select previous date from current date.</string>
+    <string name="time_picker_error" formatted="false"> Please schedule %1$s time to next 3 hours.</string>
+    <string name="invalid_time_picker_error">Invalid selected time.</string>
+    <string name="file_download">Downloading..</string>
+    <string name="category_inventory">inventory</string>
+    <string name="category_deals">deal</string>
+    <string name="folder_name">SP_APP</string>
+    <string name="i_would_like_to">I would like to buy it for</string>
+    <string name="please_enter_text">Please enter text</string>
+    <string name="please_enter_address">Please enter meeting address</string>
+    <string name="file_already_downloaded">File already downloaded.</string>
+    <string name="file_download_completed">File download completed.</string>
+    <string name="incomplete_download_file_deleted">Incomplete downloaded file is deleted.</string>
+    <string name="offer_code">Offer code</string>
+    <string name="offer_accepted">Offer Accepted</string>
+    <string name="offer_rejected">Offer Rejected</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="make_another_offer">Make another offer</string>
+    <string name="make_an_offer">Make an Offer</string>
+    <string name="txt_pre_sales">Pre-Sales</string>
+    <string name="txt_asm">ASM</string>
+    <string name="txt_sp">SP</string>
+    <string name="txt_toolbar_pre_sales" formatted="false">Pre Sales (%1$s)</string>
+    <string name="txt_toolbar_sales" formatted="false">Sales (%1$s)</string>
+    <string name="txt_my_transactions">My Transactions</string>
+    <string name="txt_my_ivrleads">IVR Leads</string>
+    <string name="txt_inventories">Inventories</string>
+    <string name="txt_favorites">Favorites</string>
+    <string name="txt_brokers">Brokers</string>
+    <string name="txt_Ivr">IVR Leads</string>
+    <string name="txt_contact_us">Contact Us</string>
+    <string name="txt_share_broker_app">Share Broker App</string>
+    <string name="txt_your_relationship_manager">Your Relationship Manager</string>
+    <string name="txt_my_deals">My Deals</string>
+    <string name="txt_inve">Inventories</string>
+    <string name="title_activity_my_transactions">My Transactions</string>
+    <string name="tab_direct">DIRECT</string>
+    <string name="tab_channel">CHANNEL</string>
+    <string name="tab_pending">PENDING</string>
+    <string name="tab_updated">UPDATED</string>
+    <string name="tab_follow_up">FOLLOW UP</string>
+    <string name="tab_closure">CLOSURE</string>
+    <string name="tab_assigned">ASSIGNED</string>
+    <string name="tab_un_assigned">UNASSIGNED</string>
+    <string name="tab_work_history">WORK HISTORY</string>
+    <string name="tab_history_notes">NOTES</string>
+    <string name="channel_name">Raheja SP App</string>
+
+    <string name="txt_read_later">Read Later</string>
+    <string name="title_activity_transaction_details">Order Id</string>
+    <string name="txt_customer_name">Customer Name</string>
+    <string name="txt_order_status">Order Status</string>
+    <string name="txt_customer_mobileno">Customer Mobile No</string>
+    <string name="txt_transaction_id">Transaction Id</string>
+    <string name="txt_project_name">Project Name</string>
+    <string name="txt_tower_no">Tower No</string>
+    <string name="txt_select_project">Select Project</string>
+    <string name="txt_select_corporate_activity">Select Corporate Activity</string>
+    <string name="txt_select_status">Select Status</string>
+    <string name="txt_select_status_choose">Choose Lead Status</string>
+    <string name="txt_status">Status</string>
+    <string name="txt_unit_size">Unit Size</string>
+    <string name="txt_unit_name">Unit Name</string>
+    <string name="txt_transaction_datetime">Date and Time</string>
+    <string name="txt_transaction_amount">Transaction Amount</string>
+    <string name="txt_coapplicant">Co-applicant</string>
+    <string name="txt_payment_plan">Payment Plan</string>
+    <string name="txt_coupen_code">Coupen Code</string>
+    <string name="txt_broker_code">Broker Code</string>
+    <string name="txt_broker_code_colon">Broker Code: %1$s</string>
+    <string name="txt_broker_status_and_type">: %1$s (%2$s)</string>
+    <string name="toolbar_txt_broker_status_and_type"> %1$s (%2$s)</string>
+    <string name="txt_broker_detalis_toolbar">%1$s (%2$s)</string>
+    <string name="txt_broker_name">Broker Name</string>
+    <string name="txt_payment_plan_key">payment_plan</string>
+    <string name="txt_payment_plan_name_key">payment_plan_name</string>
+    <string name="txt_payment_plan_desc_key">payment_plan_desc</string>
+    <string name="txt_order_no">Order No.</string>
+    <string name="txt_unit_no">Unit No.</string>
+    <string name="txt_cheque_amount">Cheque Amount</string>
+    <string name="txt_cheque_no">Cheque No.</string>
+    <string name="txt_cheque_date">Cheque Date</string>
+    <string name="txt_customer_email">Customer Email</string>
+    <string name="txt_pan_aadhar_no">Pan Card/Aadhar No.</string>
+    <string name="txt_coupon_code">Coupon Code</string>
+    <string name="txt_cheque_dd">Cheque/DD</string>
+    <string name="txt_net_banking">Net Banking</string>
+    <string name="txt_debit_card">Debit Card</string>
+    <string name="txt_credit_card">Credit Card</string>
+    <string name="txt_size">Size</string>
+    <string name="txt_added_by" formatted="false"> : &#160; %1$s</string>
+    <string name="txt_date_and_time"><![CDATA[Date & Time]]></string>
+    <string name="txt_payment_mode">Payment Mode</string>
+    <string name="link_broker_app">https://bit.ly/2OV7cQu</string>
+    <string name="txt_some_thing_went">Some thing went wrong!</string>
+    <string name="txt_no_data_found">No Data Found.</string>
+    <string name="title_activity_broker_details">Broker Name</string>
+    <string name="tab_leads_assigned">LEADS ASSIGNED</string>
+    <string name="tab_transactions">TRANSACTIONS</string>
+    <string name="tab_personal_info">PERSONAL INFO</string>
+
+    <string name="colon" formatted="false"> : &#160; %1$s</string>
+    <string name="colon_priceMark" formatted="false"> : &#160; ₹ %1$s</string>
+    <string name="txt_enquiry_id_toolbar" formatted="false"> Enquiry Id (%1$s)</string>
+    <string name="txt_budget">Budget</string>
+    <string name="txt_budget_range">Budget (min-max)</string>
+    <string name="txt_property_type">Property Type</string>
+    <string name="txt_city">City</string>
+    <string name="txt_mobile_no">Mobile No.</string>
+    <string name="txt_address">Address</string>
+    <string name="txt_contact_number">Contact Number</string>
+    <string name="txt_email_id">Email Id</string>
+    <string name="txt_business_type">Business Type</string>
+    <string name="txt_firm_type">Firm Type</string>
+    <string name="txt_rera_no">Rera Number</string>
+    <string name="txt_pan_card">Pan Card</string>
+    <string name="txt_gst_no">GST No.</string>
+    <string name="txt_document_status">Document Status</string>
+    <string name="txt_preferred_location">Preferred Location</string>
+    <string name="txt_followup_date_time"><![CDATA[Follow Up Date & Time]]></string>
+    <string name="txt_lead_added_on">Lead Added On</string>
+    <string name="txt_customer_number">Customer Number</string>
+    <string name="txt_current_status">Current Status</string>
+    <string name="text_status">Status</string>
+    <string name="tx_datetime">date : %1$s</string>
+    <string name="tx_status">Status : %1$s</string>
+    <string name="txt_project">Project</string>
+    <string name="txt_send_email">Send mail…</string>
+    <string name="txt_emial_format">text/plain</string>
+    <string name="txt_whatsApp_package">com.whatsapp</string>
+    <string name="txt_overdue">Overdue</string>
+    <string name="select_sub_status_first">Please select sub status first</string>
+    <string name="enter_valid_cheque_no">Please enter valid cheque no.</string>
+
+    <string name="txt_transaction_project_name">%1$s, %2$s (%3$s)</string>
+    <string name="txt_transaction_payment_mode"> : &#160; %1$s (%2$s)</string>
+    <string name="txt_campaign">Campaign</string>
+    <string name="txt_campaign_date">Campaign Date</string>
+    <string name="txt_status_date">Status Date</string>
+    <string name="txt_status_address">Status Address</string>
+    <string name="txt_name">Name</string>
+    <string name="txt_last_updated">Last Updated On</string>
+    <string name="txt_enquiry_id">Enquiry Id : %1$s</string>
+    <string name="txt_campaign_name">Campaign: %1$s</string>
+    <string name="txt_campaign_project">Campaign: %1$s - %2$s</string>
+    <string name="txt_salesperson_name">Sales Person : %1$s</string>
+    <string name="txt_last_updated_on">Date and Time : %1$s</string>
+    <string name="txt_meeting_date_time">Meeting Date and Time : %1$s</string>
+    <string name="txt_broker_meeting_date_time">Meeting Date and Time</string>
+    <string name="txt_site_visit_date_time">Site Visit Date and Time : %1$s</string>
+    <string name="txt_call_back_date_time">Callback Date and Time : %1$s</string>
+    <string name="txt_alternate_mobile_no">Alternate Mobile No.</string>
+    <string name="txt_callback_date_time"><![CDATA[%1$s Date & Time]]></string>
+    <string name="txt_date_time"><![CDATA[Date & Time]]></string>
+    <string name="txt_assign_to">Assign To</string>
+    <string name="txt_broker_assign_to">Select Broker To Assign</string>
+    <string name="txt_sp_campaign_detail">%1$s</string>
+    <string name="txt_campaign_detail">%1$s - %2$s</string>
+    <string name="txt_campaign_pro">%1$s</string>
+    <string name="txt_update">Update</string>
+    <string name="txt_save">Save</string>
+    <string name="txt_accept">Accept</string>
+    <string name="txt_reject">Reject</string>
+    <string name="txt_history">History</string>
+    <string name="spinner_default_txt">Select Sales Person</string>
+    <string name="spinner_select_project">Select projects </string>
+    <string name="txt_enter_unit_no">Enter unit no. </string>
+    <string name="spinner_select_any_project">Select project</string>
+    <string name="spinner_select_closure_project">Select closure project </string>
+    <string name="spinner_select_status">Select an status</string>
+    <string name="spinner_select">Select</string>
+    <string name="toast_msg_enter_customer_name">Please enter customer name</string>
+    <string name="toast_msg_please_select_sp">Please Select Sales Person</string>
+    <string name="toast_msg_select_location">Please Select at least one Location</string>
+    <string name="toast_msg_date_mandatory">Date is mandatory</string>
+    <string name="toast_msg_time_mandatory">Time is mandatory</string>
+    <string name="toast_msg_remark_mandatory">Remark is mandatory</string>
+    <string name="toast_msg_budget_mandatory">Budget is mandatory</string>
+    <string name="toast_select_min_budget_first">Select min budget first</string>
+    <string name="toast_msg_lead_type_mandatory">Lead type is mandatory</string>
+    <string name="toast_msg_address_mandatory">%1$s is mandatory</string>
+    <string name="toast_msg_person_mandatory">No.Of Persons is mandatory</string>
+    <string name="toast_msg_min_budget_could_not_greater">Min budget could not be greater or equal to max budget</string>
+    <string name="toast_msg_max_budget_could_not_less">Max budget could not be less or equal to min budget</string>
+    <string name="toast_msg_project_assign_to_lead_status_mandatory">Please change project/assign to/lead status to update</string>
+    <string name="toast_msg_project_lead_status_mandatory">Please change project/lead status to update</string>
+    <string name="txt_meeting_date">Meeting Date</string>
+    <string name="txt_meeting_time">Meeting Time</string>
+    <string name="text_site_visit_time">Site Visit Time</string>
+    <string name="txt_meeting">Meeting</string>
+    <string name="txt_corporate_activity">Corporate Activity</string>
+    <string name="txt_select_broker">Select Broker</string>
+    <string name="txt_please_select_broker">Please Select Broker</string>
+    <string name="txt_self">Self</string>
+    <string name="txt_with_broker">Broker</string>
+    <string name="txt_site_visit">Site Visit</string>
+    <string name="txt_callback">Callback Time</string>
+    <string name="text_callback">Callback</string>
+    <string name="text_closure">Closure</string>
+    <string name="text_not_interested">Not Interested</string>
+    <string name="text_marketing_calls">Marketing call</string>
+    <string name="text_just_enquiry">Just Enquiry</string>
+    <string name="txt_select_meeting_location">Meeting Location</string>
+    <string name="txt_sub_status">Sub Status</string>
+    <string name="txt_select_sub_status">Update Status</string>
+    <string name="txt_meeting_address">Meeting Address</string>
+    <string name="txt_enter_meeting_address">Enter meeting Address</string>
+    <string name="txt_lead_type">Lead Type</string>
+    <string name="txt_enter_remarks">Enter Remarks</string>
+    <string name="txt_enter_bank_name">Please enter bank name</string>
+
+    <string name="txt_typed_date">%1$s Date</string>
+    <string name="txt_callback_date">Callback Date</string>
+    <string name="text_meeting_date">Meeting Date</string>
+    <string name="text_site_visit_date">Site Visit Date</string>
+    <string name="txt_typed_time">%1$s Time</string>
+    <string name="txt_typed_address">%1$s Address</string>
+    <string name="txt_pickup_address">Pickup Address</string>
+    <string name="txt_select_person">No. of Person</string>
+
+    <string name="txt_cold">Cold</string>
+    <string name="txt_warm">Warm</string>
+    <string name="txt_hot">Hot</string>
+    <string name="text_alert_description">Do you want to update the lead status ?</string>
+    <string name="text_alert_universal">Do you want to add remark in this call?</string>
+    <string name="txt_customerName">customer_name</string>
+    <string name="txt_order_id">order_id</string>
+    <string name="txt_order_id_key">Order Id</string>
+    <string name="txt_customer_mobile_no">Customer Mobile No.</string>
+    <string name="txt_notification_id">notification_id</string>
+    <string name="txt_payment_status">order_status</string>
+    <string name="txt_unit_id">unit_id</string>
+    <string name="txt_unit_id_key">Unit No.</string>
+    <string name="txt_projectName">project_name</string>
+    <string name="txt_transaction_No">Transaction No</string>
+    <string name="transaction_no">transaction_no</string>
+    <string name="txt_transaction_date_time">Transaction Date and Time</string>
+    <string name="txt_paymentMode">payment_mode</string>
+    <string name="txt_amount">Amount</string>
+    <string name="txt_chequeAmount">amount</string>
+    <string name="txt_order_date">order_date</string>
+    <string name="txt_customer_telephone">customer_telephone</string>
+    <string name="txt_pan_no">pan_no</string>
+    <string name="txt_no_of_person">No of Person</string>
+    <string name="txt_couponCode">coupen_code</string>
+    <string name="txt_coupon_code_key">coupon_code</string>
+    <string name="txt_coupon_code_message">No coupon applied</string>
+    <string name="txt_customerEmail">customer_email</string>
+    <string name="txt_transaction_no">Transaction No.</string>
+    <string name="txt_transaction_date">Transaction Date</string>
+    <string name="colon_rs">:&#160;` %1$s </string>
+    <string name="rs">:&#160;`</string>
+    <string name="txt_budget_not_available">: %1$s</string>
+    <string name="txt_success">Success</string>
+    <string name="txt_failure">Failure</string>
+    <string name="txt_transaction_success">Transaction Completed Successfully</string>
+    <string name="txt_no_transaction"> No Transactions</string>
+    <string name="txt_under_process">Under process</string>
+    <string name="txt_min_budget">Min</string>
+    <string name="txt_max_budget">Max</string>
+
+
+    <string name="sit_back_message"><![CDATA[Sit back & Relax!]]></string>
+    <string name="sit_back_message_2"><![CDATA[While we are verifying your mobile number]]></string>
+
+    <string name="enter_otp_manually">(Enter the OTP below in case if we fail to detect the SMS automatically)</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="title_verify_otp">Verify OTP</string>
+    <string name="if_you_forgot_password">(If you have forgotten your username or email address, please contact your account administrator to help you access your details)</string>
+    <string name="password_request_sent">Your password reset request is successfully sent to account administrator. You will be notified by email for your new password</string>
+    <string name="resend_otp">Resend OTP</string>
+    Not Interested
+
+    <string-array name="leads_array">
+        <item>Not Interested</item>
+        <item>Marketing Call</item>
+        <item>Just Enquiry</item>
+        <item>Callback</item>
+        <item>Meeting</item>
+        <item>Site Visit</item>
+    </string-array>
+
+    <string-array name="person_count_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="array_min_budget">
+        <item>10 Lacs</item>
+        <item>20 Lacs</item>
+        <item>30 Lacs</item>
+        <item>40 Lacs</item>
+        <item>50 Lacs</item>
+        <item>60 Lacs</item>
+        <item>70 Lacs</item>
+        <item>80 Lacs</item>
+        <item>90 Lacs</item>
+        <item>1.0 Cr</item>
+        <item>1.2 Cr</item>
+        <item>1.5 Cr</item>
+        <item>2.0 Cr</item>
+        <item>2.5 Cr</item>
+        <item>3.0 Cr</item>
+        <item>3.5 Cr</item>
+        <item>4.0 Cr</item>
+        <item>4.5 Cr</item>
+
+    </string-array>
+
+    <string-array name="array_max_budget">
+        <item>20 Lacs</item>
+        <item>30 Lacs</item>
+        <item>40 Lacs</item>
+        <item>50 Lacs</item>
+        <item>60 Lacs</item>
+        <item>70 Lacs</item>
+        <item>80 Lacs</item>
+        <item>90 Lacs</item>
+        <item>1.0 Cr</item>
+        <item>1.2 Cr</item>
+        <item>1.5 Cr</item>
+        <item>2.0 Cr</item>
+        <item>2.5 Cr</item>
+        <item>3.0 Cr</item>
+        <item>3.5 Cr</item>
+        <item>4.0 Cr</item>
+        <item>4.5 Cr</item>
+        <item>5.0 Cr</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tag_update_lead">TAG_UPDATE_LEAD</string>
+    <string name="txt_msg_lead_not_updated">Nothing has been changed</string>
+    <!-- MySyncAdapter related -->
+    <string name="sync_account_type">com.sp</string>
+    <string name="content_authority">com.sp.syncadapter</string>
+
+    <string name="txt_device_sync_started">Device sync started...</string>
+    <string name="txt_device_data_synced">Device data Synced.</string>
+    <string name="txt_server_data_synced">Server data Synced.</string>
+    <string name="txt_offline_leads_not_found">Offline leads not available to sync</string>
+    <string name="txt_offline_data_not_found">Offline data not available to sync</string>
+    <string name="txt_call_recording_not_found">Call recording not available</string>
+    <string name="txt_no_internet_connection">No internet connection</string>
+    <string name="name_regex">[a-z0-9_-]{3,15}</string>
+    <string name="file_extension_not_correct">Recording file not correct</string>
+    <string name="tag_notification">notification</string>
+    <string name="menu_item_calender_view">Calendar View</string>
+    <string name="menu_item_heat_map">Heat Map</string>
+    <string name="menu_item_status">Status</string>
+    <string name="menu_item_date_and_time">Date and Time</string>
+    <string name="menu_item_all_leads">All Leads</string>
+    <string name="txt_sync_not_success">Sync is not successful</string>
+    <string name="txt_select_no_of_person">Select No of Persons</string>
+    <string name="txt_select_no_of_person_site_visit">Select no. of person for site visit</string>
+    <string name="txt_lead_is_closed">Lead is closed.</string>
+    <string name="saved_data_locally"> Changes saved locally</string>
+    <string name="txt_add_appointment">ADD_APPOINTMENT</string>
+    <string name="txt_read_more">... read more</string>
+    <string name="txt_read_less">read less</string>
+    <string name="key_navigation">TAB_NAVIGATED_FROM</string>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.activities.SalesActivity">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/search"
+        android:orderInCategory="1"
+        android:title="@string/action_search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+
+    <!-- <item
+         android:id="@+id/action_sync"
+         android:icon="@drawable/ic_action_sync"
+         android:orderInCategory="120"
+         android:title="@string/action_sync"
+         app:actionViewClass="android.widget"
+         app:showAsAction="ifRoom" />-->
+
+    <item
+        android:id="@+id/menu_group_by"
+        android:checked="false"
+        android:orderInCategory="100"
+        android:title="Group By >"
+        app:itemTextAppearance="@style/menu_text_style"
+        app:showAsAction="never" />
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_default"
+            android:icon="@drawable/app_icon"
+            android:orderInCategory="100"
+            android:title="@string/menu_item_all_leads" />
+        <item
+            android:id="@+id/menu_date_time"
+            android:icon="@drawable/app_icon"
+            android:orderInCategory="100"
+            android:title="@string/menu_item_date_and_time" />
+
+        <item
+            android:id="@+id/menu_status"
+            android:orderInCategory="200"
+            android:title="@string/menu_item_status" />
+        <item
+            android:id="@+id/heat_map"
+            android:orderInCategory="200"
+            android:title="@string/menu_item_heat_map" />
+
+        <item
+            android:id="@+id/menu_item_calender"
+            android:icon="@drawable/calender"
+            android:orderInCategory="300"
+            android:title="@string/menu_item_calender_view" />
+    </group>
+
+
+
+</menu>

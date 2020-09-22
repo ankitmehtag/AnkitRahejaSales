@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+ <color name="default_background_color">@android:color/transparent</color>
+ <color name="default_progress_color">#33b5e5</color>
+ <color name="default_stroke_color">#33b5e5</color>
+ <color name="default_text_color">#333333</color>
+ <color name="apptheme_color">#88c354</color>
+ <color name="black">#000000</color>
+ <!-- <color name="green">#36BE6D</color> -->
+
+ <!--<color name="blue_color">#714617</color>-->
+
+ <drawable name="green">#36BE6D</drawable>
+
+ <color name="black_alpha_40">#99000029</color>
+ <color name="white_alpha_40">#99ffffff</color>
+
+ <!--<color name="blue_color">#714617</color>-->
+
+ <color name="golden_alpha_10">#8C714617</color>
+ <color name="transparent_black">#66000000</color>
+ <color name="darkwhite">#faebd7</color>
+
+ <color name="light_blue">#CCF2FF</color>
+
+ <color name="action_bar_green">#36BE6D</color>
+ <color name="green_border">#278343</color>
+ <color name="btn_normal">#445064</color>
+ <color name="btn_pressed">#171C26</color>
+ <color name="btn_normal_white">#ffffff</color>
+ <color name="btn_pressed_white">#F0F3F4</color>
+ <color name="white_action_bar_item">#ffffff</color>
+ <color name="grey_root_bg">#F0F3F4</color>
+ <color name="orange_normal">#E67E22</color>
+ <color name="orange_pressed">#99E67E22</color>
+ <color name="selected_underline">#009745</color>
+ <color name="unselected_underline">#cccccc</color>
+ <color name="unselected_tv">#000000</color>
+ <color name="selected_tv">#009745</color>
+ <color name="pie_strock">#86929D</color>
+ <color name="pie_pregress">#9986929D</color>
+
+ <color name="proj_detail_bg">#E4E8E9</color>
+ <!--<color name="blue_color">#714617</color>-->
+ <color name="tab_txt_color">#454545</color>
+
+ <color name="starNotSelected">#B7B7B7</color>
+ <color name="starFullySelected">#0D937C</color>
+ <color name="starPartiallySelected">#0D937C</color>
+
+
+ <color name="red">#ff0000</color>
+ <color name="blue">#0000ff</color>
+ <color name="yellow">#ffff00</color>
+
+ <color name="slateblue">#007FFF</color>
+ <color name="white">#ffffff</color>
+
+
+ <color name="pressed_color">#4d90fe</color>
+ <color name="default_color">#ffffff</color>
+
+ <color name="pressed">#EBEDEC</color>
+
+ <!--     //new Design according to set color  -->
+ <!--<color name="blue_color">#db9d29</color>-->
+
+ <!--<color name="text_color_grey">#db9d29</color>-->
+ <!--<color name="text_color_grey">#db9d29</color>-->
+ <!--<color name="white_40">#FFFFFF</color>-->
+
+
+ <color name="yellow1">#F9E60E</color>
+ <color name="yellow2">#F9F89D</color>
+ <color name="orange4">#F7BE45</color>
+ <color name="orange5">#F7D896</color>
+ <color name="blue2">#19FCDA</color>
+ <color name="blue25">#D9F7F2</color>
+ <color name="grey05">#ACA899</color>
+ <color name="grey">#999999</color>
+ <color name="white1">#FFFFFF</color>
+ <color name="white2">#DDDDDD</color>
+
+ <color name="sb__snack_bkgnd">#323232</color>
+
+ <color name="legend_9_10">#EF676B</color>
+ <color name="legend_7_8">#FAB97F</color>
+ <color name="legend_5_6">#FEE581</color>
+ <color name="legend_3_4">#90C97A</color>
+ <color name="legend_0_2">#64BD7D</color>
+
+ <color name="bmh_green">#0D937C</color>
+ <!--<color name="blue_color">#DB9D29</color>-->
+ <!--<color name="blue_color">#711117</color>-->
+ <color name="heatmap_bg">#E6F0F86E</color>
+
+ <color name="colorGray">#D0D0D0</color>
+
+
+ <color name="sky_blue">#2196F3</color>
+ <color name="indigo_600">#3949ab</color>
+ <color name="amber">#FFC107</color>
+ <color name="deep_orange">#FF5722</color>
+
+ <color name="colorPrimaryDark">#1793f2</color>
+<color name="blue_color">#17a3f2</color>
+ <color name="bg_grey">#eeeeee</color>
+ <color name="black_70">#66000000</color>
+<color name="white_40">#B3ffffff</color>
+ <color name="grey_boarder">#c2c2c2</color>
+ <color name="text_color_black">#282828</color>
+ <color name="text_color_grey">#727272</color>
+
+ <color name="transparent">#00000000</color>
+
+
+</resources>

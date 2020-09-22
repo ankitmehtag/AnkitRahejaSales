@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/splash_screen"
+    android:orientation="vertical" >
+
+    <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:text="Developed by Queppelin"
+        android:textColor="#ffffff"
+        android:textSize="15sp" /> -->
+
+     <!-- <ImageView
+         android:id="@+id/img_animation"
+         android:layout_width="200dp"
+         android:layout_height="100dp"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="16dp"
+         android:src="@drawable/clo" /> -->
+
+</RelativeLayout>

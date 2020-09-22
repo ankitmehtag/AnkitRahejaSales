@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#11FFFFFF"
+    android:orientation="vertical" >
+
+    <!-- Header Section -->
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#714617" >
+
+        <TextView
+            android:id="@+id/builder_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:text="Done"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvReturnPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/builder_done"
+            android:layout_alignBottom="@+id/builder_done"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Builder"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <ImageButton
+            android:id="@+id/image_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/arrow_left" />
+
+        <TextView
+            android:id="@+id/builder_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvReturnPrice"
+            android:layout_alignBottom="@+id/tvReturnPrice"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/image_btn"
+            android:text="Clear All"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:orientation="vertical" >
+
+        <!-- Editext for Search -->
+
+        <EditText
+            android:id="@+id/inputSearch1"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:hint="Search builder name.."
+            android:inputType="textVisiblePassword"
+            android:visibility="gone" />
+
+        <AutoCompleteTextView
+            android:id="@+id/inputSearch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="#EBEDEC"
+            android:hint="Search builder name.. "
+            android:padding="6dip"
+            android:shadowColor="@color/black"
+            android:shadowDx="1.2"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:textSize="16sp" />
+
+        <ListView
+            android:id="@+id/mainListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

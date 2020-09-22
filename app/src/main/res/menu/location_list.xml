@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.queppelin.bookmyhouse.com.bookmyhouse.LocationListActivity" >
+    <item
+        android:id="@+id/action_heatmap"
+        android:orderInCategory="100"
+        android:title="@string/heat_map"
+        android:icon="@drawable/ic_place_white"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_filter"
+        android:orderInCategory="100"
+        android:title="@string/header_filter"
+        android:icon="@drawable/filter_icon"
+        app:showAsAction="always"/>
+
+</menu>

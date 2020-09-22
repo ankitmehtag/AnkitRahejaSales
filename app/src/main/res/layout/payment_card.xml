@@ -1,0 +1,271 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/details_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/tv_project_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="ayanya"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="16sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvBuilderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_project_name"
+            android:layout_marginLeft="10dp"
+            android:text="Raheja"
+            android:textColor="#969696" />
+
+        <!-- <android.support.v4.view.ViewPager -->
+        <!-- android:id="@+id/pager" -->
+        <!-- android:layout_width="120dp" -->
+        <!-- android:layout_height="120dp" /> -->
+
+
+        <!-- <android.support.v4.view.ViewPager -->
+
+        <ImageView
+            android:id="@+id/unit_img"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/tvBuilderName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/app_icon_img" />
+
+        <TextView
+            android:id="@+id/bhk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Possession"
+            android:layout_below="@+id/tvBuilderName"
+            android:layout_marginLeft="10dp"
+            android:text="BHK"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvPricePsf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bhk"
+            android:layout_below="@+id/bhk"
+            android:text="1200 Sq ft."
+            android:textColor="#000000" />
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/image_line" -->
+        <!-- android:layout_width="250dp" -->
+        <!-- android:layout_height="1dp" -->
+        <!-- android:layout_alignLeft="@+id/Possession" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:background="#969696" > -->
+        <!-- </ImageView> -->
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvPricePsf"
+            android:layout_marginTop="105dp"
+            android:text="Total Price"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvFloorNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvUnitNo"
+            android:layout_marginLeft="12dp"
+            android:text="Floor : "
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvUnitNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/unit_img"
+            android:layout_below="@+id/unit_img"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:text="Unit No. :"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/apply_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/total_price"
+            android:layout_below="@+id/total_price"
+            android:text="Other charges may apply"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/apply_charge"
+            android:layout_toRightOf="@+id/apply_charge"
+            android:text="Lacs"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvBooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvUnitNo"
+            android:layout_alignBottom="@+id/tvUnitNo"
+            android:layout_alignLeft="@+id/apply_charge"
+            android:text="Booking"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvBookingF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvBooking"
+            android:layout_alignBottom="@+id/tvBooking"
+            android:layout_toRightOf="@+id/apply_charge"
+            android:text="30000"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvReturnPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvBooking"
+            android:layout_below="@+id/tvBooking"
+            android:text="Non-refundable"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/Possession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_project_name"
+            android:layout_toRightOf="@+id/unit_img"
+            android:text="Possession by March, 2016"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"
+        android:background="#969696" >
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/card_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_line" >
+
+        <Button
+            android:id="@+id/btn_landmarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:text="Credit Card"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/image_line2"
+            android:layout_width="90dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/btn_landmarks"
+            android:background="#969696" >
+        </ImageView>
+
+        <Button
+            android:id="@+id/btn_airports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btn_landmarks"
+            android:background="#FFFFFF"
+            android:text="Debit Card"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignTop="@+id/card_table"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/card_table" >
+
+        <EditText
+            android:id="@+id/card_number"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#969696"
+            android:ems="10"
+            android:hint="CARD NUMBER"
+            android:inputType="number"
+            android:textColor="#FFFFFF" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/card_number"
+            android:layout_marginTop="2dp"
+            android:background="#969696"
+            android:ems="10"
+            android:hint="CCV NUMBER"
+            android:inputType="number" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView1"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editText1"
+            android:layout_marginTop="2dp"
+            android:background="#969696"
+            android:ems="10"
+            android:hint="NAME ON CARD"
+            android:text="AutoCompleteTextView" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/autoCompleteTextView1"
+            android:layout_marginTop="2dp"
+            android:background="#969696"
+            android:ems="10"
+            android:hint="EXPIRY DATE : MM/YY"
+            android:inputType="date" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

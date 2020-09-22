@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/iv_unit_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/bg_img_loder"
+        android:scaleType="fitXY"
+        android:background="@color/grey"
+        android:padding="1dp"/>
+    <TextView
+        android:id="@+id/tv_unit_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unit No: 106F"
+        android:layout_toRightOf="@+id/iv_unit_img"
+        android:layout_marginLeft="10dp"
+        style="@style/tv_chat_unit_sub_title"/>
+
+    <TextView
+        android:id="@+id/tv_unit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Raheja"
+        android:layout_toRightOf="@+id/iv_unit_img"
+        android:layout_below="@+id/tv_unit_no"
+        android:layout_marginLeft="10dp"
+        style="@style/tv_chat_unit_title"/>
+    <TextView
+        android:id="@+id/tv_reserved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="13sp"
+        android:layout_toRightOf="@+id/iv_unit_img"
+        android:layout_below="@+id/tv_unit_name"
+        android:textColor="@color/red"
+        android:layout_marginLeft="10dp"
+        style="@style/tv_chat_unit_title"/>
+
+        <TextView
+            android:id="@+id/tv_details"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Details"
+            android:textColor="@drawable/filter_tv_text_selector"
+            android:background="@drawable/circular"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"/>
+
+</RelativeLayout>

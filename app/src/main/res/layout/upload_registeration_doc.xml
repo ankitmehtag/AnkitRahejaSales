@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_aadhar_rera_doc_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Documents(BF)"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:background="@drawable/top_two_rounded_corner"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bottom_two_rounded_corner">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+                <ImageView
+                    android:id="@+id/iv_capture_img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="50dp"
+                    android:src="@drawable/upload_camera"/>
+                <ImageView
+                    android:id="@+id/iv_choose_file"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/upload_file"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/iv_preview"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+            <ProgressBar
+                android:id="@+id/pb_progress"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_margin="5dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:visibility="gone"
+                android:progressDrawable="@drawable/progress_drawable_horizontal"/>
+            <TextView
+                android:id="@+id/tv_percentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:textColor="@color/text_color_black"/>
+            <ImageView
+                android:id="@+id/iv_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_done_black_24dp"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/btn_upload"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/text_state_white_grey"
+                android:textAllCaps="false"
+                android:text="Upload"
+                android:background="@color/blue_color"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
